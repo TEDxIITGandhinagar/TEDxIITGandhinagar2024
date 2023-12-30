@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar .nav-links {
+  color: rgb(255, 255, 255);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-links a:hover {
+  color: red;
+}
+
+.nav-links a.active {
+  background: rgb(255, 0, 0);
+  color: black;
+  border-radius: 1rem;
+  padding-inline: 10px;
+  display: inline-block;
+}

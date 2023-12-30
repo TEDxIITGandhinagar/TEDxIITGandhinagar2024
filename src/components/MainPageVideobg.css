@@ -1,0 +1,129 @@
+.body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: black;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-container{
+  height: 50%;
+  width: 50%;
+}
+
+#myVideo {
+  position: absolute;
+  width: 75%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  z-index: 2;
+}
+
+.text-overlay h1 {
+  margin: 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+#tedx{
+  color: red;
+}
+
+#gn{
+  color: white;
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+}
+
+.imagevec {
+  width: 45%; 
+  height: auto;
+  max-height: 100%;
+  border-radius: 0 10px 10px 0;
+  opacity: 0;
+  transform: translateX(0); 
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.imagevec1 {
+  animation: slideInLeft 1.5s ease-in-out forwards;
+  z-index: 4;
+}
+
+.imagevec2 {
+  animation: slideInRight 1.5s ease-in-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(90%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(30%);
+    opacity: 1;
+  }
+}
+
+/* For Removing the Scrollbar */
+/* For Webkit browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: none;
+}
+
+body {
+  scrollbar-color: #888 #f1f1f1;
+}
