@@ -15,8 +15,8 @@ html {
 }
 
 .video-container{
-  height: 50%;
-  width: 50%;
+  height: 50vw;
+  width: 50vw;
 }
 
 #myVideo {
@@ -85,11 +85,11 @@ html {
 
 @keyframes slideInLeft {
   from {
-    transform: translateX(-100%);
+    transform: translateX(-100vw);
     opacity: 0;
   }
   to {
-    transform: translateX(90%);
+    transform: translateX(40vw);
     opacity: 1;
   }
 }

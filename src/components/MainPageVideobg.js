@@ -10,10 +10,10 @@ function MainPageVideobg() {
         Your browser does not support the video tag.
       </video>
       </div>
-      <div className="text-overlay">
+      {/* <div className="text-overlay">
         <h1 id='tedx'>TEDx</h1>
         <h1 id='gn'>IIT Gandhinagar</h1>
-      </div>
+      </div> */}
       <div className="image-container">
         <img className='imagevec imagevec1' src='Vector1.svg' alt='vectorimg' />
         <img className='imagevec imagevec2' src='Vector.svg' alt='vectorimg' />
