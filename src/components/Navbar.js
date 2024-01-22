@@ -1,39 +1,69 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
   const location = useLocation();
   const [currentSelection, setCurrentSelection] = useState("");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 1000);
 
-  const handleNavLinkClick = (selectedLink,) => {
-    if (currentSelection === selectedLink) {
-      setCurrentSelection("");
-    } else {
-      setCurrentSelection(selectedLink);
-      if (selectedLink === "about") {
-        const aboutSection = document.getElementById("about-section");
-        if (aboutSection) {
-          aboutSection.scrollIntoView({ behavior: "smooth" });
-        }
-      }
-    }
+  const handleNavLinkClick = (selectedLink) => {
+    setCurrentSelection(selectedLink);
+    closeMobileMenu();
   };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
+  useEffect(() => {
+    // Close mobile menu on route change
+    closeMobileMenu();
+  }, [location.pathname]);
+
+  useEffect(() => {
+    // Function to update state based on window width
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 1000);
+    }
+
+    // Add event listener on mount
+    window.addEventListener('resize', handleResize);
+    handleResize();
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <>
-      <div className="navbar">
+      <div className={`navbar ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
         <div className="logo-container">
-          <img src="logotedx.svg" alt="TEDx Logo" />
+          <NavLink to="/">
+            <img src="logotedx.svg" alt="TEDx Logo" />
+          </NavLink>
         </div>
-        <div className="nav-links">
-          <NavLink to="/" onClick={(e) => handleNavLinkClick("home", e)} className={currentSelection === "home" ? "" : ""} >HOME</NavLink>
-          <NavLink to="/about" className={currentSelection === "about" ? "active" : ""} onClick={(e) => handleNavLinkClick("about", e)}>ABOUT</NavLink>
-          <NavLink to="/speakers" className={currentSelection === "speakers" ? "active" : ""} onClick={(e) => handleNavLinkClick("speakers", e)}>SPEAKERS</NavLink>
-          <NavLink to="/talks" className={currentSelection === "talks" ? "active" : ""} onClick={(e) => handleNavLinkClick("talks", e)}>TALKS</NavLink>
-          <NavLink to="/team" className={currentSelection === "team" ? "active" : ""} onClick={(e) => handleNavLinkClick("team", e)}>TEAM</NavLink>
-          <NavLink to="/schedule" className={currentSelection === "schedule" ? "active" : ""} onClick={(e) => handleNavLinkClick("schedule", e)}>SCHEDULE</NavLink>
-          <NavLink to="/tickets" className={currentSelection === "tickets" ? "active" : ""} onClick={(e) => handleNavLinkClick("tickets", e)}>GET TICKETS</NavLink>
+        {/* Hamburger menu icon */}
+        {isMobileView && (
+          <div className="hamburger-menu" >
+            <button className="barbutt" onClick={toggleMobileMenu}>
+              {isMobileMenuOpen ? '✕': '☰'}
+            </button>
+          </div>
+        )}
+  
+        {/* Navigation links */}
+        <div className={`nav-links ${isMobileMenuOpen ? 'mobile-menu' : ''}`}>
+          <NavLink to="/" onClick={() => handleNavLinkClick("home")}>HOME</NavLink>
+          <NavLink to="/about" onClick={() => handleNavLinkClick("about")}>ABOUT</NavLink>
+          <NavLink to="/speakers" onClick={() => handleNavLinkClick("speakers")}>SPEAKERS</NavLink>
+          <NavLink to="/talks" onClick={() => handleNavLinkClick("talks")}>TALKS</NavLink>
+          <NavLink to="/team" onClick={() => handleNavLinkClick("team")}>TEAM</NavLink>
+          <NavLink to="/schedule" onClick={() => handleNavLinkClick("schedule")}>SCHEDULE</NavLink>
+          <NavLink to="/tickets" onClick={() => handleNavLinkClick("tickets")}>GET TICKETS</NavLink>
         </div>
       </div>
     </>

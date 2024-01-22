@@ -1,38 +1,105 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  padding: 10px 20px;
-  color: white;
+/* Desktop styles */
+@media (min-width: 1001px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+  }
+  .hamburger-menu{
+    display: none;
+  }
+  .navbar .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    transition: color 0.3s, background-color 0.3s;
+  }
+
+  .nav-links a:hover {
+    color: red;
+  }
+
+  .nav-links a.active {
+    background: rgb(255, 0, 0);
+    color: black;
+    border-radius: 1rem;
+    padding-inline: 10px;
+    display: inline-block;
+  }
 }
 
-.navbar .nav-links {
-  color: rgb(255, 255, 255);
-}
+/* Mobile styles */
+@media (max-width: 1000px) {
+  .navbar {
+    flex-direction: column;
+    position: relative;
+  }
 
-.nav-links {
-  display: flex;
-  gap: 20px;
-}
+  .navbar .nav-links {
+    display: none; 
+    position: relative;
+    right: 0;
+    gap: 20px;
+    transition: opacity 0.5s ease-in;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.5);
+  }
 
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  position: relative;
-  transition: color 0.3s, background-color 0.3s;
-}
+  .navbar.mobile-menu-open .nav-links {
+    display: flex; 
+    flex-direction: column;
+    padding-top: 3px;
+    opacity: 1;
+  }
 
-.nav-links a:hover {
-  color: red;
-}
+  .navbar.mobile-menu-open .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 3px;
+  }
 
-.nav-links a.active {
-  background: rgb(255, 0, 0);
-  color: black;
-  border-radius: 1rem;
-  padding-inline: 10px;
-  display: inline-block;
+  .navbar.mobile-menu-open .nav-links a:hover {
+    color: red;
+    text-decoration: underline;
+  }
+
+  .nav-links .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-decoration: none;
+  }
+
+  .nav-links a.active {
+    background: rgb(255, 0, 0);
+    color: black;
+    border-radius: 1rem;
+    padding-inline: 10px;
+    display: inline-block;
+  }
+
+  .barbutt{
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 80px;
+    border: 1px solid black;
+  }
+
+  .hamburger-menu{
+    display: inline-block;
+  }
 }

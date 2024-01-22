@@ -6,7 +6,8 @@ html {
   font-family: 'Arial', sans-serif;
   background-color: black;
 }
-
+@media(min-width:1000px){
+  
 .container {
   position: relative;
   height: 100vh;
@@ -16,7 +17,7 @@ html {
 
 .video-container{
   height: 50vw;
-  width: 50vw;
+  width: 50vwceo;
 }
 
 #myVideo {
@@ -77,6 +78,7 @@ html {
 .imagevec1 {
   animation: slideInLeft 1.5s ease-in-out forwards;
   z-index: 4;
+  box-shadow:0px 0px 10px fade(#f50404,50%);
 }
 
 .imagevec2 {
@@ -104,7 +106,7 @@ html {
     opacity: 1;
   }
 }
-
+}
 /* For Removing the Scrollbar */
 /* For Webkit browsers (e.g., Chrome, Safari) */
 ::-webkit-scrollbar {
@@ -126,4 +128,70 @@ html {
 
 body {
   scrollbar-color: #888 #f1f1f1;
+}
+
+/* -------------For Mobile Screens--------------- */
+
+@media(max-width:1000px){
+  .container {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .video-container{
+    height: 100%; /* Adjusted for smaller screens */
+    width: 100%; /* Adjusted for smaller screens */
+  }
+
+  #myVideo {
+    width: 100%; /* Adjusted for smaller screens */
+    height: 100%; /* Adjusted for smaller screens */
+  }
+
+  .text-overlay {
+    top: 50%;
+    left: 50%; /* Centered on smaller screens */
+    transform: translate(-50%, -50%);
+  }
+
+  .image-container {
+    width: 100%; /* Adjusted for smaller screens */
+    height: auto; /* Adjusted for smaller screens */
+    flex-direction: column; /* Stacked images on smaller screens */
+  }
+
+  .imagevec {
+    width: 100%; /* Adjusted for smaller screens */
+    height: auto; /* Adjusted for smaller screens */
+  }
+
+  .imagevec1 {
+    animation: slideInDown 1.5s ease-in-out forwards; /* Changed animation for smaller screens */
+  }
+
+  .imagevec2 {
+    animation: slideInUp 1.5s ease-in-out forwards; /* Changed animation for smaller screens */
+  }
+
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-100vh);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInUp {
+    from {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 }
