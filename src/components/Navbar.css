@@ -68,11 +68,6 @@
     padding-bottom: 0.35rem;
   }
 
-  /* .navbar.mobile-menu-open .nav-links a:hover {
-    color: red;
-    text-decoration: underline;
-  } */
-
   .nav-links .mobile-menu {
     display: flex;
     flex-direction: column;
@@ -102,7 +97,13 @@
   }
 
   .hamburger-menu{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+
+    /* position: relative; */
     z-index: 1; /* add this */
   }
+  /* .logo-container{
+    
+  } */
 }

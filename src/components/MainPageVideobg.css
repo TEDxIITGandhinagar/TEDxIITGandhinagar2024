@@ -64,6 +64,7 @@ html {
   align-items: center;
   justify-content: space-between;
   z-index: 3;
+  overflow: hidden;
 }
 
 .imagevec {
@@ -99,11 +100,11 @@ html {
 
 @keyframes slideInRight {
   from {
-    transform: translateX(100%);
+    transform: translateX(100vw);
     opacity: 0;
   }
   to {
-    transform: translateX(30%);
+    transform: translateX(30vw);
     opacity: 1;
   }
 }
