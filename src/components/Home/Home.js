@@ -6,14 +6,15 @@ function Home(){
     return(
         <>
         <MainPageVideobg/>
-        
-        {/* <div id="about-section">
-            <About/>
-        </div> */}
+
         <div className="suspense">
             <h1>Revealing Soon</h1>
         </div>
-        <Countdown/>
+                
+        <div id="about-section">
+            <About/>
+        </div>
+        {/* <Countdown/> Add this after either having good animated gifs or after a new countdown*/} 
         </>
     )
 }

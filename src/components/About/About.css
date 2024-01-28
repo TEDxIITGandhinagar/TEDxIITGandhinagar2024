@@ -1,0 +1,7 @@
+#about{
+    color: Red;
+    position: relative;
+}
+.vec-container{
+    transition: ease-in 0.5s;
+}

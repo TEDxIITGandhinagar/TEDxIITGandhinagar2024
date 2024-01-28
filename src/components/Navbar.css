@@ -14,6 +14,7 @@
   .navbar .nav-links {
     display: flex;
     gap: 20px;
+    align-items: center;
   }
 
   .nav-links a {
@@ -23,6 +24,7 @@
     font-size: 20px;
     position: relative;
     transition: color 0.3s, background-color 0.3s;
+    box-sizing: border-box;
   }
 
   .nav-links a:hover {
@@ -32,8 +34,9 @@
   .nav-links a.active {
     background: rgb(255, 0, 0);
     color: black;
-    border-radius: 1rem;
-    padding-inline: 10px;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    padding: 5px 5px;
     display: inline-block;
   }
 }
@@ -43,13 +46,15 @@
   .navbar {
     flex-direction: column;
     position: relative;
+    background-color: transparent;
+    display: flex;
   }
 
   .navbar .nav-links {
     display: none; 
     position: relative;
     right: 0;
-    gap: 20px;
+    gap: 5px;
     transition: opacity 0.5s ease-in;
     opacity: 0;
     background-color: rgba(0,0,0,0.5);
@@ -66,26 +71,25 @@
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding-left: 3px;
+    text-align:  center;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
   }
 
-  .navbar.mobile-menu-open .nav-links a:hover {
+  /* .navbar.mobile-menu-open .nav-links a:hover {
     color: red;
     text-decoration: underline;
-  }
+  } */
 
   .nav-links .mobile-menu {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     text-decoration: none;
   }
 
   .nav-links a.active {
     background: rgb(255, 0, 0);
-    color: black;
     border-radius: 1rem;
-    padding-inline: 10px;
     display: inline-block;
   }
 
@@ -96,10 +100,17 @@
     top: 15px;
     right: 10px;
     width: 80px;
+    scale: 2;
     border: 1px solid black;
+    z-index: 1;
+  }
+
+  .navbar.mobile-menu-open .barbutt {
+    opacity: 0.5;
   }
 
   .hamburger-menu{
     display: inline-block;
+    z-index: 1; /* add this */
   }
 }
