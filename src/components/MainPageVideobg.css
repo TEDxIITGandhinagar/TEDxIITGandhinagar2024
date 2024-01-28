@@ -17,7 +17,8 @@ html {
 
 .video-container{
   height: 50vw;
-  width: 50vwceo;
+  width: 50vw;
+  padding-top: 1px;
 }
 
 #myVideo {
@@ -79,7 +80,7 @@ html {
   animation: slideInLeft 1.5s ease-in-out forwards;
   z-index: 4;
   box-shadow:0px 0px 10px fade(#f50404,50%);
-}
+} 
 
 .imagevec2 {
   animation: slideInRight 1.5s ease-in-out forwards;
@@ -91,7 +92,7 @@ html {
     opacity: 0;
   }
   to {
-    transform: translateX(40vw);
+    transform: translateX(39.01vw);
     opacity: 1;
   }
 }
@@ -144,8 +145,8 @@ body {
   }
 
   #myVideo {
-    width: 100%; /* Adjusted for smaller screens */
-    height: 100%; /* Adjusted for smaller screens */
+    max-width: 85%; /* Adjusted for smaller screens */
+    max-height: 100%; /* Adjusted for smaller screens */
   }
 
   .text-overlay {

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import './Navbar.css';
 
 function Navbar() {
@@ -50,15 +51,25 @@ function Navbar() {
         {isMobileView && (
           <div className="hamburger-menu" >
             <button className="barbutt" onClick={toggleMobileMenu}>
-              {isMobileMenuOpen ? '✕': '☰'}
+              {isMobileMenuOpen ? '✕' : '☰'}
             </button>
           </div>
         )}
-  
+
         {/* Navigation links */}
         <div className={`nav-links ${isMobileMenuOpen ? 'mobile-menu' : ''}`}>
           <NavLink to="/" onClick={() => handleNavLinkClick("home")}>HOME</NavLink>
-          <NavLink to="/about" onClick={() => handleNavLinkClick("about")}>ABOUT</NavLink>
+          <Link
+            activeClass="active"
+            to="about-section"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            onClick={() => handleNavLinkClick("about")}
+          >
+            ABOUT
+          </Link>
           <NavLink to="/speakers" onClick={() => handleNavLinkClick("speakers")}>SPEAKERS</NavLink>
           <NavLink to="/talks" onClick={() => handleNavLinkClick("talks")}>TALKS</NavLink>
           <NavLink to="/team" onClick={() => handleNavLinkClick("team")}>TEAM</NavLink>
