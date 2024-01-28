@@ -1,6 +1,6 @@
 .redbox{
   height: 3000px;
-  width: 15%;
+  width: 8vw;
   background-color: rgb(195, 0, 0);
  
  
@@ -18,7 +18,7 @@
                             @import url('https://fonts.cdnfonts.com/css/norwester');
 
 .textonbox{
-  margin-left: -8%;
+  margin-left: -4%;
   color: white;
   font-family: 'MyNorwester';
   writing-mode: vertical-rl;
@@ -33,12 +33,14 @@
   
 }
 .newdiv{
-  width: 1000px;
+  width: 10vw;
   position: relative;
+  /* margin-right: 0; */
 }
 .flexto{
   display: flex;
   position: relative;
+  /* margin-right:  0!important ; */
 }
 .org{
   margin-top: 3%;

@@ -228,3 +228,12 @@ html, body {
   font-family: 'MyNorwester';
   src: local('MyNorwester'), url(../../fonts/norwester.otf)  format('opentype')
 }
+
+.vraj{
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+  justify-content:center;
+  gap: 15px;
+  width: 100vw;
+}

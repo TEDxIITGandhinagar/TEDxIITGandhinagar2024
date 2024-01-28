@@ -1,5 +1,5 @@
 /* Desktop styles */
-@media (min-width: 1001px) {
+@media (min-width: 1000px) {
   .navbar {
     display: flex;
     justify-content: space-between;
