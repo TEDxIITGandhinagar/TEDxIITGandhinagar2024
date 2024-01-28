@@ -104,7 +104,7 @@ html {
     opacity: 0;
   }
   to {
-    transform: translateX(30vw);
+    transform: translateX(11vw);
     opacity: 1;
   }
 }
