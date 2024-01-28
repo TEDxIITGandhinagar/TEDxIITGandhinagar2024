@@ -15,9 +15,6 @@ function Team() {
   useEffect(() => {
     let text = document.querySelector('#text');
     text.setAttribute('data-text', text.innerHTML);
-
-    document.body.innerHTML += '<div style="position: absolute; bottom: 0; left: 0; right: 0; padding: .5em; font-size: 12px; font-family: monospace; text-align: center; pointer-events: none;">Click anywhere to re-run</div>';
-
     var lr = document.querySelector('html');
     window.addEventListener('click', () => {
       var newone = lr.cloneNode(true);
@@ -25,10 +22,6 @@ function Team() {
       lr = newone;
     });
   }, []);
-
-
-
-
 
 
   return (
