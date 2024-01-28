@@ -4,13 +4,13 @@
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  padding: 10px 20px;
+  padding: 0.5rem 2rem;
   color: white;
   box-sizing: border-box;
   width: 100vw;
 }
 .navbar .logo-container img{
- height: 5rem;
+ height: 3.5rem;
 }
 .hamburger-menu{
   display: none;
@@ -23,10 +23,11 @@
 .nav-links a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 1rem;
   transition: color 0.3s, background-color 0.3s;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .nav-links a:hover {
   color: red;
@@ -36,7 +37,7 @@
   color: black;
   border-radius: 0.5rem;
   font-weight: bold;
-  padding: 5px 5px;
+  padding: 5px 10px;
 }
 
 /* Mobile styles */
@@ -99,9 +100,6 @@
   .hamburger-menu{
     display: flex;
     flex-direction: column;
-
-    /* position: relative; */
-    z-index: 1; /* add this */
   }
   /* .logo-container{
     
