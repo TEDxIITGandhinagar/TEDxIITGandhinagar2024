@@ -1,5 +1,5 @@
 /* Desktop styles */
-  .navbar {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,19 +7,19 @@
     padding: 10px 20px;
     color: white;
     border: 1px solid red;
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
   }
-  .hamburger-menu{
+.hamburger-menu{
     display: none;
   }
-  .navbar .nav-links {
+.navbar .nav-links {
     display: flex;
     gap: 20px;
     align-items: center;
   }
 
-  .nav-links a {
+.nav-links a {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -29,11 +29,11 @@
     box-sizing: border-box;
   }
 
-  .nav-links a:hover {
+.nav-links a:hover {
     color: red;
   }
 
-  .nav-links a.active {
+.nav-links a.active {
     background: rgb(255, 0, 0);
     color: black;
     border-radius: 0.5rem;
@@ -44,12 +44,12 @@
 
 
 /* Mobile styles */
-@media (max-width: 1000px) {
+@media (max-width: 1140px) {
   .navbar {
-    /* flex-direction: column; */
+    /* flex-direction: column;  */
     /* position: relative; */
     /* background-color: transparent; */
-    /* display: flex; */
+    display: flex;
   }
 
   .navbar .nav-links {
@@ -107,11 +107,13 @@
   }
 
   .hamburger-menu{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+
     /* position: relative; */
     z-index: 1; /* add this */
   }
-  .logo-container{
+  /* .logo-container{
     
-  }
+  } */
 }
