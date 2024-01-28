@@ -25,9 +25,9 @@
   color: white;
   font-weight: 500;
   font-size: 1rem;
-  transition: color 0.3s, background-color 0.3s;
   box-sizing: border-box;
   cursor: pointer;
+  transition: all 0.3s;
 }
 .nav-links a:hover {
   color: red;
@@ -44,64 +44,34 @@
 @media (max-width: 1000px) {
 
   .navbar .nav-links {
-    display: none; 
-    position: relative;
-    right: 0;
-    gap: 5px;
-    transition: opacity 0.5s ease-in;
-    opacity: 0;
-    background-color: rgba(0,0,0,0.5);
-  }
-
-  .navbar.mobile-menu-open .nav-links {
     display: flex; 
     flex-direction: column;
-    padding-top: 3px;
-    opacity: 1;
+    position: absolute;
+    top: 4.5rem;
+    right: 0;
+    width: 100vw;
+    max-height: 0px;
+    gap: 1rem;
+    transition: all 0.75s;
+    background-color: rgba(0,0,0,0.75);
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 4;
   }
 
-  .navbar.mobile-menu-open .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  .navbar .nav-links.mobile-menu {
+    max-height: 400px;
+  }
+
+  .navbar .nav-links a {
     text-align:  center;
-    padding-top: 0.35rem;
-    padding-bottom: 0.35rem;
-  }
-
-  .nav-links .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-  }
-
-  .nav-links a.active {
-    background: rgb(255, 0, 0);
-    border-radius: 1rem;
-    display: inline-block;
   }
 
   .barbutt{
     color: white;
     background-color: black;
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    width: 80px;
     scale: 2;
     border: 1px solid black;
     z-index: 1;
   }
-
-  .navbar.mobile-menu-open .barbutt {
-    opacity: 0.5;
-  }
-
-  .hamburger-menu{
-    display: flex;
-    flex-direction: column;
-  }
-  /* .logo-container{
-    
-  } */
 }

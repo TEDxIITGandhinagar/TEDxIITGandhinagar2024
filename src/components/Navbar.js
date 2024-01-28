@@ -49,11 +49,9 @@ function Navbar() {
         </div>
         {/* Hamburger menu icon */}
         {isMobileView && (
-          <div className="hamburger-menu" >
-            <button className="barbutt" onClick={toggleMobileMenu}>
+          <button className="barbutt" onClick={toggleMobileMenu}>
               {isMobileMenuOpen ? '✕' : '☰'}
             </button>
-          </div>
         )}
 
         {/* Navigation links */}
@@ -74,7 +72,7 @@ function Navbar() {
           <NavLink to="/talks" onClick={() => handleNavLinkClick("talks")}>TALKS</NavLink>
           <NavLink to="/team" onClick={() => handleNavLinkClick("team")}>TEAM</NavLink>
           <NavLink to="/schedule" onClick={() => handleNavLinkClick("schedule")}>SCHEDULE</NavLink>
-          <NavLink to="/tickets" onClick={() => handleNavLinkClick("tickets")}>GET TICKETS</NavLink>
+          <NavLink to="/tickets" style={isMobileMenuOpen ? {paddingBottom: '1rem'} : {}} onClick={() => handleNavLinkClick("tickets")}>GET TICKETS</NavLink>
         </div>
       </div>
     </>
