@@ -5,3 +5,6 @@
 .vec-container{
     transition: ease-in 0.5s;
 }
+.vec-container img{
+    width: 100vw;
+}

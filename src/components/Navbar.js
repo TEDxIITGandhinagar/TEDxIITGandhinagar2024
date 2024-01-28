@@ -44,7 +44,7 @@ function Navbar() {
       <div className={`navbar ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
         <div className="logo-container">
           <NavLink to="/">
-            <img src="logotedx.svg" alt="TEDx Logo" />
+            <img src="TEDxIITGN.png" alt="TEDx Logo" />
           </NavLink>
         </div>
         {/* Hamburger menu icon */}
