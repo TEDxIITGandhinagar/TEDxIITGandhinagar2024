@@ -129,25 +129,25 @@ html, body {
 }
 
 
-@keyframes display{
+/* @keyframes display{
   move-left { to{
-    /* transform: translate(0,-35%); */
-    /* transform: scale(1,1.5); */
-    /* text-align: center; */
+    transform: translate(0,-35%);
+    transform: scale(1,1.5);
+    text-align: center;
   }
     
   }
   
   move-right { to{
-      /* transform: translate(0,35%); */
-      /* transform: scale(1,1.5); */
-      /* text-align: center; */
+      transform: translate(0,35%);
+      transform: scale(1,1.5);
+      text-align: center;
     }
       
     
   }
 
-}
+} */
 .texti{
   /* font-family: 'Work Sans', sans-serif; */
   font-weight: 800;
