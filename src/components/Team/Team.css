@@ -14,17 +14,10 @@ html, body {
   /* cursor: pointer; */
   width: 100%;
 }
-.size{
- height: 500vh;
- display: flex;
- flex-direction: column;
- justify-content: flex-start;
- position: sticky;
- /* align-items: center */
-}
+
 .text-size{
  width: 100%;
- height: calc(95vh - 92px);
+ height: calc(98vh - 92px);
  display: flex;
  justify-content: center;
  align-items: center;
@@ -135,14 +128,7 @@ html, body {
   } */
 }
 
-/* @keyframes blur {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-} */
+
 @keyframes display{
   move-left { to{
     /* transform: translate(0,-35%); */
@@ -217,9 +203,6 @@ html, body {
   transition: opacity 0.5s ease; /* Add a smooth transition for opacity */
 }
 
-.size{
-  height: 1000vh;
-}
 @font-face{
   font-family: 'MyFont';
   src: local('MyFont'), url(../../fonts/Calamity\ Outline.otf)  format('opentype')
@@ -232,8 +215,9 @@ html, body {
 .vraj{
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: row; */
   justify-content:center;
-  gap: 15px;
+  align-items: flex-start;
+  column-gap: 40px;
+  row-gap: 0px;
   width: 100vw;
 }

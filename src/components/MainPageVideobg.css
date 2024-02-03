@@ -141,8 +141,8 @@ body {
   }
 
   .video-container{
-    height: 100%; /* Adjusted for smaller screens */
-    width: 100%; /* Adjusted for smaller screens */
+    height: 90%; /* Adjusted for smaller screens */
+    width: 80%; /* Adjusted for smaller screens */
   }
 
   #myVideo {
@@ -163,36 +163,36 @@ body {
   }
 
   .imagevec {
-    width: 100%; /* Adjusted for smaller screens */
-    height: auto; /* Adjusted for smaller screens */
+    max-width: 70%; /* Adjusted for smaller screens */
+    max-height: 80%; /* Adjusted for smaller screens */
   }
 
   .imagevec1 {
-    animation: slideInDown 1.5s ease-in-out forwards; /* Changed animation for smaller screens */
+    animation: slideInLeft 1.5s ease-in-out forwards; /* Changed animation for smaller screens */
   }
 
   .imagevec2 {
-    animation: slideInUp 1.5s ease-in-out forwards; /* Changed animation for smaller screens */
+    animation: slideInRight 1.5s ease-in-out forwards; /* Changed animation for smaller screens */
   }
 
-  @keyframes slideInDown {
+  @keyframes slideInLeft {
     from {
-      transform: translateY(-100vh);
+      transform: translateX(-100vh);
       opacity: 0;
     }
     to {
-      transform: translateY(0);
+      transform: translateX(10vh);
       opacity: 1;
     }
   }
 
-  @keyframes slideInUp {
+  @keyframes slideInRight {
     from {
-      transform: translateY(100vh);
+      transform: translateX(100vw);
       opacity: 0;
     }
     to {
-      transform: translateY(0);
+      transform: translateX(10vw);
       opacity: 1;
     }
   }
