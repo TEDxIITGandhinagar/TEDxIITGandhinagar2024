@@ -1,9 +1,9 @@
 /* Define variables */
-                            @import url('https://fonts.cdnfonts.com/css/calamity');
+@import url('https://fonts.cdnfonts.com/css/calamity');
+@import url('https://fonts.cdnfonts.com/css/norwester');    
 
-                            @import url('https://fonts.cdnfonts.com/css/norwester');             
 :root {
-  --background: #00000000;
+  --background: #000000;
   --colorOne: #ed3833;
   --mainColor: #ffffff;
 }
@@ -129,25 +129,25 @@ html, body {
 }
 
 
-@keyframes display{
+/* @keyframes display{
   move-left { to{
-    /* transform: translate(0,-35%); */
-    /* transform: scale(1,1.5); */
-    /* text-align: center; */
+    transform: translate(0,-35%);
+    transform: scale(1,1.5);
+    text-align: center;
   }
     
   }
   
   move-right { to{
-      /* transform: translate(0,35%); */
-      /* transform: scale(1,1.5); */
-      /* text-align: center; */
+      transform: translate(0,35%);
+      transform: scale(1,1.5);
+      text-align: center;
     }
       
     
   }
 
-}
+} */
 .texti{
   /* font-family: 'Work Sans', sans-serif; */
   font-weight: 800;
@@ -175,7 +175,7 @@ html, body {
 /* ... your existing styles ... */
 
 /* Apply styles to the parallax element (red-colored rectangle) */
-.parallax {
+#parallax {
   position: fixed;
   top: 0;
   left: 0;
@@ -216,8 +216,7 @@ html, body {
   display: flex;
   flex-wrap: wrap;
   justify-content:center;
-  align-items: flex-start;
-  column-gap: 40px;
-  row-gap: 0px;
-  width: 100vw;
+  gap: 3rem;
+  width: 90vw;
+  margin-left: 10vw;
 }

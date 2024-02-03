@@ -4,7 +4,7 @@
   border-radius: 10px;
   /* margin-left: -40%; Adjust margin as needed */
   height: 350px;
-  width: 300px;
+  width: 275px;
   background: url(Cardsample.png), linear-gradient(to top, rgb(0, 0, 0), rgb(255, 255, 255));
   /* background: linear-gradient(to top, rgb(229, 38, 70), rgb(255, 115, 0)); */
   background-size: cover;
@@ -39,7 +39,7 @@
 .name {
   color: white;
   text-transform: uppercase;
-  margin-left: 5%;
+  margin-left: 1rem;
   font-family: 'MyNorwester';
 }
 
@@ -49,12 +49,13 @@
 }
 
 .description {
-  display: none;
+  position: relative;
+  padding: 0rem 1rem;
+  font-size: 0.85rem;
+  top: 50%;
+  transition: all 1s ease;
 }
 
 .card-container:hover .description {
-  display: contents;
-  padding: 5px;
-  /* margin: 1%; */
-  justify-content: center;
+  top: 0;
 }
