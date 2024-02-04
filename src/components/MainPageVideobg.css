@@ -30,8 +30,8 @@ html {
 
 .text-overlay {
   position: absolute;
-  top: 50%;
-  left: 20%;
+  top: 35%;
+  left: 33%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
@@ -41,16 +41,26 @@ html {
   z-index: 2;
 }
 
+.hype{
+  display: flex;
+  font-size: 42px;
+  text-shadow: 1px 3px 5px;
+}
+.revealing{
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+}
+
 .text-overlay h1 {
   margin: 0;
   display: flex;
-  flex-direction: row-reverse;
 }
 #tedx{
   color: red;
 }
 
-#gn{
+#gn #reveal{
   color: white;
 }
 

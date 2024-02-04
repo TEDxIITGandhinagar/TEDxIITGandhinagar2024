@@ -1,4 +1,6 @@
 .info{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -6,7 +8,9 @@
     color: red;
     position: relative;
     font-size: 90px;
+    display: flex;
     text-shadow: 2px 2px 5px;
+    justify-content: center;
 }
 #ted{
     color: white;
