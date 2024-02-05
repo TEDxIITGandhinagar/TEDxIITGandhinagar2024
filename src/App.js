@@ -7,7 +7,7 @@ import Speakers from './components/Speakers/Speakers';
 import Talks from './components/Talks/Talks'; 
 import Team from './components/Team/Team';
 import Tickets from './components/Tickets/Tickets'
-
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -27,6 +27,7 @@ function App() {
       <Route path="/schedule" element={<Talks/>} />
       <Route path="/tickets" element={Tickets} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }
