@@ -1,29 +1,14 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import './Cards.css'; // Create a separate CSS file
-
-
+// Card.js
+import React from 'react';
+import './Cards.css';
 
 const Card = (props) => {
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 1000,
-  //     delay: 600,
-  //   });
-  // }, []);
-
   return (
-    <div className="card-container">
-
+    <div className="card-container" style={{backgroundImage: `url(${props.image})`}}>
       <div className="card">
         <div className="overlay">
-          <p className='name'
-          >{props.name}</p>
-          <p className='description'>
-            {props.description}
-          </p>
-
+          <p className='name'>{props.name}</p>
+          <p className='description'>{props.description}</p>
         </div>
       </div>
     </div>
@@ -31,4 +16,3 @@ const Card = (props) => {
 };
 
 export default Card;
-
