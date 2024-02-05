@@ -71,15 +71,17 @@ function Footer() {
                                 <li>Near Palaj</li>
                                 <li>Gandhinagar, Gujarat, India - 382355</li>
                                 <div className="contact-numbers" style={{ display: 'flex', flexDirection: 'column' }}>
-                                    <li style={{ display: 'inline' }}><a style={{ fontSize: '1.6rem' }} href="tel:9713440242">Yeeshu:+91 9713440242</a></li>
-                                    <li style={{ display: 'inline' }}><a style={{ fontSize: '1.6rem' }} href="tel:8005499671">Shreya:+91 8005499671</a></li>
-                                    <li style={{ display: 'inline' }}><a style={{ fontSize: '1.6rem' }} href="tel:8511216030">Dhairya:+91 8511216030</a></li>
+                                    <li style={{ display: 'inline' }}><a style={{ fontSize: '1.6rem' }} href="tel:9713440242">Pratham
+Sharda:+91 9713440242</a></li>
+                                    <li style={{ display: 'inline' }}><a style={{ fontSize: '1.6rem' }} href="tel:8005499671">Shreyans
+Jain:+91 8005499671</a></li>
+                                    {/* <li style={{ display: 'inline' }}><a style={{ fontSize: '1.6rem' }} href="tel:8511216030">Dhairya:+91 8511216030</a></li> */}
                                 </div>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <p className="copyright">© Copyright 2023 <span className="red-text">TED<sup>x</sup>IITGandhinagar</span> | This independent TED<sup>x</sup>event is operated under license from TED.</p>
+                <p className="copyright">© Copyright 2024 <span className="red-text">TED<sup>x</sup>IITGandhinagar</span> | This independent TED<sup>x</sup>event is operated under license from TED.</p>
             </footer>
         </section>
     );
