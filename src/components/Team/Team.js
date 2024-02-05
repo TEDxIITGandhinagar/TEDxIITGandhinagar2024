@@ -37,6 +37,8 @@ function Team() {
           image='/team/sj.jpeg'/>
           <Card name='Pratham Sharda' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' 
           image='/team/ps.jpeg'/>
+          <Card name='Parth Govale' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' 
+          image='/team/pg.jpg'/>
           <Card name='Balagopal ki Maakabhosda' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' 
           image='/team/Bg.jpg'/>
           <Card name='Parag Sahu' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' 
@@ -49,8 +51,7 @@ function Team() {
           image='/team/dhruvi.jpg'/>
           <Card name='Darshan Zhala' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' 
           image='/team/darshan.jpg'/>
-          {/* <Card name='rachit mehta' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' 
-          image='/team/sj.jpg'/>
+          {/*
           <Card name='rachit mehta' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' 
           image='/team/sj.jpg'/>
           <Card name='rachit mehta' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' 

@@ -12,7 +12,7 @@
 
 .overlay {
   height: 30%;
-  background: linear-gradient(to top, rgb(229, 38, 70), rgb(255, 115, 0));
+  background: linear-gradient(to top, rgb(255, 0, 0), rgb(255, 10, 0));
   opacity: 0.8;
   transition: height 0.3s ease;
   bottom: 0;
