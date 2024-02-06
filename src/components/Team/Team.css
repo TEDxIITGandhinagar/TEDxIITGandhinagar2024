@@ -1,9 +1,9 @@
 /* Define variables */
-                            @import url('https://fonts.cdnfonts.com/css/calamity');
+@import url('https://fonts.cdnfonts.com/css/calamity');
+@import url('https://fonts.cdnfonts.com/css/norwester');    
 
-                            @import url('https://fonts.cdnfonts.com/css/norwester');             
 :root {
-  --background: #00000000;
+  --background: #000000;
   --colorOne: #ed3833;
   --mainColor: #ffffff;
 }
@@ -14,14 +14,7 @@ html, body {
   /* cursor: pointer; */
   width: 100%;
 }
-.size{
- height: 500vh;
- display: flex;
- flex-direction: column;
- justify-content: flex-start;
- position: sticky;
- /* align-items: center */
-}
+
 .text-size{
  width: 100%;
  height: calc(100vh - 4.5rem);
@@ -135,33 +128,26 @@ html, body {
   } */
 }
 
-/* @keyframes blur {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-} */
-@keyframes display{
+
+/* @keyframes display{
   move-left { to{
-    /* transform: translate(0,-35%); */
-    /* transform: scale(1,1.5); */
-    /* text-align: center; */
+    transform: translate(0,-35%);
+    transform: scale(1,1.5);
+    text-align: center;
   }
     
   }
   
   move-right { to{
-      /* transform: translate(0,35%); */
-      /* transform: scale(1,1.5); */
-      /* text-align: center; */
+      transform: translate(0,35%);
+      transform: scale(1,1.5);
+      text-align: center;
     }
       
     
   }
 
-}
+} */
 .texti{
   /* font-family: 'Work Sans', sans-serif; */
   font-weight: 800;
@@ -189,7 +175,7 @@ html, body {
 /* ... your existing styles ... */
 
 /* Apply styles to the parallax element (red-colored rectangle) */
-.parallax {
+#parallax {
   position: fixed;
   top: 0;
   left: 0;
@@ -217,9 +203,6 @@ html, body {
   transition: opacity 0.5s ease; /* Add a smooth transition for opacity */
 }
 
-.size{
-  height: 1000vh;
-}
 @font-face{
   font-family: 'MyFont';
   src: local('MyFont'), url(../../fonts/Calamity\ Outline.otf)  format('opentype')
@@ -232,8 +215,8 @@ html, body {
 .vraj{
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: row; */
   justify-content:center;
-  gap: 15px;
-  width: 100vw;
+  gap: 3rem;
+  width: 90vw;
+  margin-left: 10vw;
 }

@@ -33,18 +33,31 @@ function Team() {
       <div className='flexto'>
         <Parallax />
         <div className='vraj'>
-          <Card name='rachit mehta' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' />
-          <Card name='rachit mehta' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' />
-          <Card name='rachit mehta' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' />
-          <Card name='rachit mehta' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' />
-          <Card name='rachit mehta' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' />
-          <Card name='rachit mehta' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' />
-          <Card name='rachit mehta' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' />
-          <Card name='rachit mehta' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' />
-          <Card name='rachit mehta' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' />
-          <Card name='rachit mehta' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' />
-          <Card name='rachit mehta' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' />
-          <Card name='rachit mehta' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' />
+          <Card name='Shreyans Jain' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' 
+          image='/team/sj.jpeg'/>
+          <Card name='Pratham Sharda' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' 
+          image='/team/ps.jpeg'/>
+          <Card name='Parth Govale' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' 
+          image='/team/pg.jpg'/>
+          <Card name='Balagopal ki Maakabhosda' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' 
+          image='/team/Bg.jpg'/>
+          <Card name='Parag Sahu' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' 
+          image='/team/parag.jpg'/>
+          <Card name='Saransh Sharma' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' 
+          image='/team/Saransh.jpg'/>
+          <Card name='Tilak Maheshwari' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' 
+          image='/team/Tilak.jpg'/>
+          <Card name='Dhruvi Sisodia' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' 
+          image='/team/dhruvi.jpg'/>
+          <Card name='Darshan Zhala' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' 
+          image='/team/darshan.jpg'/>
+          {/*
+          <Card name='rachit mehta' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' 
+          image='/team/sj.jpg'/>
+          <Card name='rachit mehta' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' 
+          image='/team/sj.jpg'/>
+          <Card name='rachit mehta' description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.n an unknown printer took a galley of type and scrambled it to make a type specimen book.' 
+          image='/team/sj.jpg'/> */}
         </div>
       </div>
     </div>

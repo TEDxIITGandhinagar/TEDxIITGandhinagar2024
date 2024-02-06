@@ -14,7 +14,7 @@ function Home(){
         <div id="about-section">
             <About/>
         </div>
-        {/* <Countdown/> Add this after either having good animated gifs or after a new countdown*/} 
+        {/* <Countdown/> Add this after either having good countdown*/}
         </>
     )
 }

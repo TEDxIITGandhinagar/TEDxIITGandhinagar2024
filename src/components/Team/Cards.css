@@ -2,33 +2,22 @@
   position: relative;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-  /* margin-left: -40%; Adjust margin as needed */
-  height: 50vh;
-  width: 20vw;
-  background: url(Cardsample.png), linear-gradient(to top, rgb(0, 0, 0), rgb(255, 255, 255));
-  /* background: linear-gradient(to top, rgb(229, 38, 70), rgb(255, 115, 0)); */
+  height: 350px;
+  width: 275px;
+  /* background: linear-gradient(to top, rgb(0, 0, 0), rgb(255, 255, 255)); */
   background-size: cover;
   margin: 5px;
-  /* filter: grayscale(90%); */
-  /* background-blend-mode: darken; */
-
-
+  overflow: hidden;
 }
 
 .overlay {
   height: 30%;
-  background: linear-gradient(to top, rgb(229, 38, 70), rgb(255, 115, 0));
-  filter: grayscale(0%);
+  background: linear-gradient(to top, rgb(255, 0, 0), rgb(255, 10, 0));
   opacity: 0.8;
   transition: height 0.3s ease;
-  /* Apply transition only to height property */
-  /* margin: 2%; */
-
   bottom: 0;
   position: absolute;
-  width: calc(96%);
-  /* Adjusted width to account for left and right margins */
-  /* border: 2px solid blue; */
+  width: calc(100%);
   border-radius: 10px;
   z-index: 4;
 }
@@ -43,7 +32,7 @@
 .name {
   color: white;
   text-transform: uppercase;
-  margin-left: 5%;
+  margin-left: 1rem;
   font-family: 'MyNorwester';
 }
 
@@ -53,12 +42,13 @@
 }
 
 .description {
-  display: none;
+  position: relative;
+  padding: 0rem 1rem;
+  font-size: 0.85rem;
+  top: 50%;
+  transition: all 1s ease;
 }
 
 .card-container:hover .description {
-  display: contents;
-  padding: 5px;
-  /* margin: 1%; */
-  justify-content: center;
+  top: 0;
 }

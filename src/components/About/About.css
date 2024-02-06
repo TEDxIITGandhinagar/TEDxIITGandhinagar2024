@@ -1,12 +1,28 @@
-#about{
-    color: Red;
-    position: relative;
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.vec-container{
+
+#about{
+    color: red;
+    position: relative;
+    font-size: 90px;
+    display: flex;
+    text-shadow: 2px 2px 5px;
+    justify-content: center;
+}
+#ted{
+    color: white;
+    font-size: 20px;
+}
+.about-container{
     transition: ease-in 0.5s;
     width: 100%;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
 }
 .vec-container img{
-    width: 100vw;
+    width: 70%;
 }

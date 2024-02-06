@@ -39,15 +39,19 @@
 }
 .flexto{
   display: flex;
-  position: relative;
+  position: absolute;
   /* margin-right:  0!important ; */
 }
 .org{
-  margin-top: 3%;
+  position: relative;
+  left: 2rem;
+  margin-top: 3rem;
   transform: rotate(90deg);
 }
 .orgw{
-  margin-top: 5%;
+  position: relative;
+  left: 2rem;
+  margin-top: 3rem;
   transform: rotate(90deg);
 }
 @font-face{

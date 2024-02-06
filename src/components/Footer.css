@@ -1,0 +1,148 @@
+footer {
+    color: #fff;
+    bottom: 0px;
+    background: black;
+    padding: 30px 0;
+    font-size: 16px;
+}
+
+.sponser {
+    margin-bottom: 5px;
+    /* Adjust as needed */
+}
+
+.footer-tedx {
+    font-size: 20px !important;
+    /* Adjust as needed */
+}
+
+.footer p {
+    color: white;
+}
+
+footer h4 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+footer a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e03a3c;
+    text-decoration: none;
+}
+
+.footer-container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    flex: 1;
+    margin-bottom: 30px;
+    margin: 0 3%;
+}
+
+.copyright {
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+    /* Adjust as needed */
+    font-size: 18px;
+}
+
+/* trying */
+.facebook-hai,
+.linkedin-hai,
+.instagram-hai {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-handles-margin {
+    margin-bottom: 10px;
+}
+
+.brands {
+    color: #000;
+    border-radius: 10%;
+    background-color: #fff;
+    margin-left: 15px;
+    /* Adjust as needed */
+    padding: 2px;
+    /* Adjust as needed */
+    border: 2px solid #fff;
+}
+
+.brands:hover {
+    color: #fff;
+    border: 2px solid #e03a3c;
+    background-color: #e03a3c;
+}
+
+.fa-facebook-f {
+    padding: 2px 4px;
+    /* Adjust as needed */
+}
+
+.fa-linkedin-in {
+    z-index: 5;
+    position: relative;
+}
+
+/* Footer CSS */
+.footer-col {
+    margin-bottom: 30px;
+}
+
+h4 {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    color: #e03a3c;
+}
+
+.social-handles li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
