@@ -1,0 +1,10 @@
+.box{
+    margin-left: 1vw;
+    width: 20vw;
+    height: 20vh;
+    background-color: red;
+    background-image: url(andrew.jpg);
+}
+.description{
+    color: white;
+}

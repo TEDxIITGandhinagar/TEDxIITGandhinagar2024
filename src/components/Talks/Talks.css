@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.center{
+    height: 50vh;
+    background-color: red;
+    width: 100vw;
+    display: flex;
+
+}
+.photocenter{
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to left,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0) 100%), url('centerphoto.jpg');
+    background-size: cover;
+}
+.centercontent{
+    color: white;
+    background-color: black;
+    height: 100%;
+    
+    
+    width: 50vw;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+}
+.textcenter{
+    width: 100%;
+    font-size: 1.8vw;
+    margin-right: 60%;
+    padding-right: 40px;
+    margin-right: 20%;
+    text-align: right;
+    font-weight: bold;
+}
+.redline{
+    width: 25%;
+    height: 1%;
+    background-color: red;
+    margin-top: 5%;
+    margin-left: 70%;
+    border-radius: 20px;
+}
+.talkname {
+    color: red;
+    margin-top: 3%;
+    font-size: 1.8vw;
+    font-weight: bold;
+    margin-left: 50%;
+}
+.tedtalk{
+    font-size: 1.8vw;
+    font-weight: bold;
+    margin-left: 60%;
+    
+}
+.textbelow{
+    color: red;
+    margin-top: 3vh;
+    font-size: 1.8vw;
+    font-weight: bold;
+    margin-left: 2vw;
+
+}
+.previoustalks{
+    display: flex;
+}

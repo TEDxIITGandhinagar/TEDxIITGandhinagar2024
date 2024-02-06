@@ -1,0 +1,77 @@
+/* YourComponent.css */
+
+:root {
+    --dark: #000000;
+    --highlight: #000000;
+    --light: #000000;
+  }
+  
+  .scroll-toggle {
+    align-items: center;
+    background-color: var(--light);
+    border: 2px solid var(--dark);
+    display: flex;
+    max-width: 680vh;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .scroll-toggle__buttonleft {
+    appearance: none;
+    border: 2px solid var(--dark);
+    /* flex: 0 0 100px; */
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    transition: all 0.1s ease;
+    content: " ";
+    border-left: 4px solid #ff0000;
+    border-bottom: 4px solid #ff0000;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    display: block;
+    background-color: black;
+  }
+  .scroll-toggle__buttonright {
+    appearance: none;
+    border: 2px solid var(--dark);
+    /* flex: 0 0 100px; */
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    transition: all 0.1s ease;
+    content: " ";
+    border-right: 4px solid #ff0000;
+    border-top: 4px solid #ff0000;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    display: block;
+    background-color: black;
+  }
+  
+  .scroll-toggle__button:active,
+  .scroll-toggle__button:hover {
+    background-color: var(--highlight);
+  }
+  
+  .scroll-toggle__button:focus {
+    outline: 2px solid var(--highlight);
+  }
+  
+  .scroll-toggle__list {
+    border-left: 2px solid var(--dark);
+    border-right: 2px solid var(--dark);
+    display: flex;
+    flex: 1 1 auto;
+    overflow-x: scroll;
+  }
+  
+  .scroll-toggle__list-item {
+    flex: 0 0 auto;
+    padding: 10px;
+  }
+  
