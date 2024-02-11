@@ -79,13 +79,13 @@ export default function About() {
         <div div id="text"><div className="text-in">OUR TEAM</div></div>
     </div>
         <div id="speakers-content">
-          <h1 className="norwester">CORES</h1>
+          <h1 className="orbitron">CORES</h1>
           <div>
             {CoreData.map((about, index) => {
               return <Card key={index} about={about} />;
             })}
           </div>
-          <h1 className="oswald">TECH TEAM</h1>
+          <h1 className="orbitron">TECH TEAM</h1>
           <div>
             {TechTeamData.map((about, index) => {
               return <Card key={index} about={about} github={true} />;

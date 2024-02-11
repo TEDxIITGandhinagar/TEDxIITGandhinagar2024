@@ -1,7 +1,4 @@
 /* Define variables */
-@import url('https://fonts.cdnfonts.com/css/calamity');
-@import url('https://fonts.cdnfonts.com/css/norwester');    
-
 :root {
   --background: #000000;
   --colorOne: #ed3833;
@@ -40,7 +37,7 @@ html, body {
 
 #about #speakers-content > h1 {
   position: relative;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 #about #speakers-content > h1::before,
 #about #speakers-content > h1::after {
@@ -54,7 +51,7 @@ html, body {
     #eb0028 100%
   );
   left: -370px;
-  top: 2.3rem;
+  top: 2.25rem;
   position: absolute;
 }
 #about #speakers-content > h1::after {
@@ -125,7 +122,7 @@ html, body {
   background: #000;
   text-align: center;
   z-index: 99;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 #about #speakers-content .about-card::after {
@@ -253,11 +250,15 @@ html, body {
     color: lighten(var(--colorOne), 0%);
     transform: translate(0,-35%);
     top: 15vw;
-               
   }
   #text:after {
     color: lighten(var(--colorOne), 20%);
     transform: translate(0,35%);
     bottom: 15vw;
+  }
+}
+@media (max-width: 700px) {
+  #about #speakers-content {
+    padding: 2rem 1.5rem;
   }
 }

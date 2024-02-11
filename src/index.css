@@ -26,6 +26,10 @@ code {
   font-family: 'MyNorwester';
   src: local('MyNorwester'), url(./fonts/norwester.otf)  format('opentype')
 }
+@font-face{
+  font-family: 'MyOrbitron';
+  src: local('MyNorwester'), url(./fonts/Orbitron.ttf)  format('truetype')
+}
 
 .calamityOutline{
   font-family: 'MyCalamityOutline' !important;
@@ -35,4 +39,7 @@ code {
 }
 .norwester{
   font-family: 'MyNorwester' !important;
+}
+.orbitron{
+  font-family: 'MyOrbitron' !important;
 }
