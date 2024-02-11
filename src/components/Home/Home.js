@@ -7,9 +7,9 @@ function Home(){
         <>
         <MainPageVideobg/>
 
-        <div className="suspense">
+        {/* <div className="suspense">
             <h1>Revealing Soon</h1>
-        </div>
+        </div> */}
                 
         <div id="about-section">
             <About/>

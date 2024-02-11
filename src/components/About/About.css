@@ -1,3 +1,7 @@
+body{
+    height: 100% !important;
+}
+
 .info{
     display: flex;
     flex-direction: column;
@@ -18,11 +22,13 @@
 }
 .about-container{
     transition: ease-in 0.5s;
+    height: 100%;
     width: 100%;
-    overflow: hidden;
     display: flex;
     flex-direction: row;
 }
-.vec-container img{
-    width: 70%;
+.about-container img{
+    max-width: 50%;
+    position: sticky;
+    top: 0;
 }
