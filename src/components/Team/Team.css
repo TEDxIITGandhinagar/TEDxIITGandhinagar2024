@@ -87,7 +87,7 @@ html, body {
   height: 300px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  /* filter: grayscale(1) contrast(1.1); */
+  filter: grayscale(1) contrast(1.1);
 }
 #about #speakers-content .about-card > div.about-links-container {
   display: flex;
@@ -163,7 +163,6 @@ html, body {
   font-family: 'MyNorwester' !important;
   text-align: center;
   position: relative;
-  top: -80px;
 }
 
 #text:before,
@@ -245,6 +244,7 @@ html, body {
 @media (max-width: 750px) {
   #text {
     font-size: 15vw;
+    top: -80px;
   }
   .text-in{
     height: calc(15vw + 20px);
