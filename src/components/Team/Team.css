@@ -24,23 +24,18 @@ html, body {
 
 
 #about #speakers-content {
-  padding: 15px;
   color: #ffedfe;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin: 0rem 2rem;
+  padding: 2rem 3rem;
   z-index: 2;
   box-sizing: border-box;
-  /* position: absolute; */
   background: black;
-  /* opacity: 0; */
   width: 100%;
-  /* min-height: 100vh; */
   top: 0px;
   text-shadow: none;
-  /* flex-direction: column; */
 }
 
 #about #speakers-content > h1 {
@@ -56,7 +51,7 @@ html, body {
   background: linear-gradient(
     90deg,
     rgba(23, 0, 54, 1) 0%,
-    rgba(150, 33, 145, 1) 100%
+    #eb0028 100%
   );
   left: -370px;
   top: 2.3rem;
@@ -66,7 +61,7 @@ html, body {
   background: linear-gradient(
     -90deg,
     rgba(23, 0, 54, 1) 0%,
-    rgba(150, 33, 145, 1) 100%
+    #eb0028 100%
   );
   left: unset;
   right: -370px;
@@ -92,6 +87,7 @@ html, body {
   height: 300px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  /* filter: grayscale(1) contrast(1.1); */
 }
 #about #speakers-content .about-card > div.about-links-container {
   display: flex;
@@ -139,8 +135,8 @@ html, body {
   height: 4px;
   background: linear-gradient(
     90deg,
-    rgba(49, 102, 229, 1) 0%,
-    rgba(3, 212, 255, 1) 100%
+    rgba(181, 20, 12, 1) 0%,
+    rgba(60, 7, 25, 1) 100%
   );
 
   left: 0;
@@ -151,7 +147,7 @@ html, body {
 
 .text-size{
   width: 100%;
-  height: calc(100vh - 4.5rem);
+  height: calc(100vh - 80px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,22 +156,14 @@ html, body {
  }
 
  #text {
-  /* font-family: 'Work Sans', sans-serif; */
   font-weight: 100;
   font-size: 10vw;
-  /* transform: skewY(-5deg); */
-  /* visibility: hidden; */
   color:white;
   animation: display 1s cubic-bezier(.6, .0, .15, 1) 4s forwards;
-  /* position: relative;
-  margin-top: 15%;
-  margin-left: 14%;
-  margin-bottom: 15%; */
-  /* text-shadow: 2px 2px 0 red, -2px -2px 0 red, 2px -2px 0 red, -2px 2px 0 red; */
-  /* font-family: 'Calamity', sans-serif; */
   font-family: 'MyNorwester' !important;
-  /* transform: scale(0.65,1.5); */
   text-align: center;
+  position: relative;
+  top: -80px;
 }
 
 #text:before,
@@ -183,7 +171,7 @@ html, body {
   content: "OUR TEAM";
   visibility: visible;
   color: var(--colorOne);
-  font-family: 'MyFont' !important;
+  font-family: 'MyCalamityOutline' !important;
   position: relative;
   display: block;
   text-align: center;
@@ -193,8 +181,6 @@ html, body {
 #text:before {
   color: lighten(var(--colorOne), 0%);
   transform: translate(0,-35%);
-  /* transition: ease; */
-  /* clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%); */
   animation: move-left 2.5s cubic-bezier(.6, .0, .15, 1),
                  ease;
   top: 10vw;
@@ -204,8 +190,6 @@ html, body {
 #text:after {
   color: lighten(var(--colorOne), 20%);
   transform: translate(0,35%);
-  /* transition: ease; */
-  /* clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%); */
   animation: move-right 3s cubic-bezier(.6, .0, .15, 1),
                ease;
   bottom: 10vw;
@@ -219,7 +203,6 @@ html, body {
   background-color: black;
   position: relative;
   z-index: 1;
-  
 }
 
 /* Define keyframes for animations */
@@ -249,30 +232,32 @@ html, body {
 }
 
 .texti{
-  /* font-family: 'Work Sans', sans-serif; */
   font-weight: 800;
-  font-size: 9vw;
-  /* transform: skewY(-5deg); */
-  /* visibility: h; */
+  font-size: 10vw;
   color: rgb(255, 253, 253);
-  /* animation: display 1s cubic-bezier(.6, .0, .15, 1) 4s forwards; */
-  /* position: absolute;
-  margin-top: -26.4%;
-  margin-left: 24%; */
-  /* text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white; */
   z-index: 4;
-  font-family: 'Norwester';
   transform: scale(1,1);
   background-color: black;
   height: 40px;
   text-align: center;
 }
 
-@font-face{
-  font-family: 'MyFont';
-  src: local('MyFont'), url(../../fonts/Calamity\ Outline.otf)  format('opentype')
-}
-@font-face{
-  font-family: 'MyNorwester';
-  src: local('MyNorwester'), url(../../fonts/norwester.otf)  format('opentype')
+@media (max-width: 750px) {
+  #text {
+    font-size: 15vw;
+  }
+  .text-in{
+    height: calc(15vw + 20px);
+  }
+  #text:before {
+    color: lighten(var(--colorOne), 0%);
+    transform: translate(0,-35%);
+    top: 15vw;
+               
+  }
+  #text:after {
+    color: lighten(var(--colorOne), 20%);
+    transform: translate(0,35%);
+    bottom: 15vw;
+  }
 }
