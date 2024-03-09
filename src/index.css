@@ -13,3 +13,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face{
+  font-family: 'MyCalamityOutline';
+  src: local('MyFont'), url(./fonts/Calamity\ Outline.otf)  format('opentype')
+}
+@font-face{
+  font-family: 'MyCalamityRegular';
+  src: local('MyFont'), url(./fonts/Calamity\ Regular.otf)  format('opentype')
+}
+@font-face{
+  font-family: 'MyNorwester';
+  src: local('MyNorwester'), url(./fonts/norwester.otf)  format('opentype')
+}
+@font-face{
+  font-family: 'MyOrbitron';
+  src: local('MyNorwester'), url(./fonts/Orbitron.ttf)  format('truetype')
+}
+
+.calamityOutline{
+  font-family: 'MyCalamityOutline' !important;
+}
+.calamityRegular{
+  font-family: 'MyCalamityRegular' !important;
+}
+.norwester{
+  font-family: 'MyNorwester' !important;
+}
+.orbitron{
+  font-family: 'MyOrbitron' !important;
+}
