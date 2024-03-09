@@ -26,9 +26,15 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
+    position: relative
 }
-.about-container img{
+.img1{
     max-width: 50%;
-    position: sticky;
+    position: static;
     top: 0;
+    z-index: 3;
+}
+
+.info-container{
+    border: solid 2px red;
 }

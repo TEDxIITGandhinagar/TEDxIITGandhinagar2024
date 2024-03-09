@@ -86,7 +86,7 @@ export const CoreData = [
   
   export const TechTeamData = [
     {
-      name: "Parth Govale",
+      name: "Jayraj Dulange",
       imgSrc: "./Images/parth.webp",
       designation: "Web Developer",
       email: "parth.govale@iitgn.ac.in",
@@ -106,7 +106,7 @@ export const CoreData = [
       github: "https://github.com/Vraj2811"
     },
     {
-      name: "Dipesh Patidar",
+      name: "Rachit Mehta",
       imgSrc: "./Images/dipesh.webp",
       designation: "Web Developer",
       email: "dipesh.patidar@iitgn.ac.in",
@@ -116,7 +116,7 @@ export const CoreData = [
       github: "https://github.com/dipesh6264",
     },
     {
-      name: "Pranav Joshi",
+      name: "Chandrabhan Patel",
       imgSrc: "./Images/pranav.webp",
       designation: "Web Developer",
       email: "pranav.joshi@iitgn.ac.in",
@@ -135,35 +135,5 @@ export const CoreData = [
       linkedin: "https://www.linkedin.com/in/romit-mohane/",
       insta: "https://instagram.com/its_romit.m",
       github: "https://github.com/Reckadon",
-    },
-    {
-      name: "Vivek Raj",
-      imgSrc: "./Images/vivek.webp",
-      designation: "Web Developer",
-      email: "23110362@iitgn.ac.in",
-      number: "+91 70120 60919",
-      linkedin: "https://www.linkedin.com/in/vivek-raj-1080aa28a/",
-      insta: "https://instagram.com/ice71594",
-      github: "https://github.com/VivekRaj2005",
-    },
-    {
-      name: "Jaidev Khalane",
-      imgSrc: "./Images/jaidev.webp",
-      designation: "Web Developer",
-      email: "jaidev.khalane@iitgn.ac.in",
-      number: "+91 95156 30148",
-      linkedin: "https://www.linkedin.com/in/jaidev-khalane-39504b286/",
-      insta: "",
-      github: "https://github.com/JaidevSK",
-    },
-    {
-      name: "Kishan Ved",
-      imgSrc: "./Images/kishan.webp",
-      designation: "Web Developer",
-      email: "kishan.ved@iitgn.ac.in",
-      number: "+91 96193 19866",
-      linkedin: "https://www.linkedin.com/in/kishan-ved-506140259/",
-      insta: "https://instagram.com/kishan_.ved",
-      github: "https://github.com/Kishan-Ved",
     },
   ];
