@@ -1,9 +1,10 @@
+import './talks.css';
 
-function Talks(){
-    return (
-        <>
-        </>
-    )
+function Talks() {
+  return (
+    <>
+    </> 
+);
 }
 
 export default Talks;

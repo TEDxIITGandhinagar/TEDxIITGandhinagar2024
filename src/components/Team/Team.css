@@ -1,7 +1,4 @@
 /* Define variables */
-@import url('https://fonts.cdnfonts.com/css/calamity');
-@import url('https://fonts.cdnfonts.com/css/norwester');    
-
 :root {
   --background: #000000;
   --colorOne: #ed3833;
@@ -15,33 +12,154 @@ html, body {
   width: 100%;
 }
 
-.text-size{
- width: 100%;
- height: calc(100vh - 4.5rem);
- display: flex;
- justify-content: center;
- align-items: center;
- position: sticky;
- overflow: hidden;
+.about-body {
+  width: 100%;
+  /* background-color: black; */
+  /* position: absolute; */
+  z-index: -1;
 }
 
-#text {
-  /* font-family: 'Work Sans', sans-serif; */
+
+#about #speakers-content {
+  color: #ffedfe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 3rem;
+  z-index: 2;
+  box-sizing: border-box;
+  background: black;
+  width: 100%;
+  top: 0px;
+  text-shadow: none;
+}
+
+#about #speakers-content > h1 {
+  position: relative;
+  font-size: 3.5rem;
+}
+#about #speakers-content > h1::before,
+#about #speakers-content > h1::after {
+  content: "";
+  display: block;
+  width: 350px;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(23, 0, 54, 1) 0%,
+    #eb0028 100%
+  );
+  left: -370px;
+  top: 2.25rem;
+  position: absolute;
+}
+#about #speakers-content > h1::after {
+  background: linear-gradient(
+    -90deg,
+    rgba(23, 0, 54, 1) 0%,
+    #eb0028 100%
+  );
+  left: unset;
+  right: -370px;
+}
+#about #speakers-content > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5px;
+  padding-top: 20px;
+  gap: 44px;
+}
+#about #speakers-content .about-card {
+  background: rgb(0, 0, 0);
+  height: 410px;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+#about #speakers-content .about-card > img {
+  width: 300px;
+  height: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  filter: grayscale(1) contrast(1.1);
+}
+#about #speakers-content .about-card > div.about-links-container {
+  display: flex;
+  justify-content: center;
+}
+#about #speakers-content .about-card img.about-links {
+  width: 25px;
+  height: 25px;
+  border-radius: 0;
+  margin: 5px;
+}
+#about #speakers-content .about-card > h3 {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.546) 0%,
+    rgba(0, 0, 0, 0.468) 75%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  position: relative;
+  color: #ffedfe;
+  z-index: 10;
+  padding-bottom: 2px;
+  margin-top: -60px;
+  margin-bottom: 11px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+}
+#about #speakers-content .about-card > span {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 4px;
+  color: rgb(255, 255, 255);
+  background: #000;
+  text-align: center;
+  z-index: 99;
+  font-size: 1rem;
+  font-weight: 500;
+}
+#about #speakers-content .about-card::after {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    rgba(181, 20, 12, 1) 0%,
+    rgba(60, 7, 25, 1) 100%
+  );
+
+  left: 0;
+  top: 296px;
+  position: absolute;
+}
+
+
+.text-size{
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  overflow: hidden;
+ }
+
+ #text {
   font-weight: 100;
   font-size: 10vw;
-  /* transform: skewY(-5deg); */
-  /* visibility: hidden; */
   color:white;
   animation: display 1s cubic-bezier(.6, .0, .15, 1) 4s forwards;
-  /* position: relative;
-  margin-top: 15%;
-  margin-left: 14%;
-  margin-bottom: 15%; */
-  /* text-shadow: 2px 2px 0 red, -2px -2px 0 red, 2px -2px 0 red, -2px 2px 0 red; */
-  /* font-family: 'Calamity', sans-serif; */
-  font-family: 'MyNorwester';
-  /* transform: scale(0.65,1.5); */
+  font-family: 'MyNorwester' !important;
   text-align: center;
+  position: relative;
 }
 
 #text:before,
@@ -49,7 +167,7 @@ html, body {
   content: "OUR TEAM";
   visibility: visible;
   color: var(--colorOne);
-  font-family: 'MyFont';
+  font-family: 'MyCalamityOutline' !important;
   position: relative;
   display: block;
   text-align: center;
@@ -59,8 +177,6 @@ html, body {
 #text:before {
   color: lighten(var(--colorOne), 0%);
   transform: translate(0,-35%);
-  /* transition: ease; */
-  /* clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%); */
   animation: move-left 2.5s cubic-bezier(.6, .0, .15, 1),
                  ease;
   top: 10vw;
@@ -70,8 +186,6 @@ html, body {
 #text:after {
   color: lighten(var(--colorOne), 20%);
   transform: translate(0,35%);
-  /* transition: ease; */
-  /* clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%); */
   animation: move-right 3s cubic-bezier(.6, .0, .15, 1),
                ease;
   bottom: 10vw;
@@ -85,7 +199,6 @@ html, body {
   background-color: black;
   position: relative;
   z-index: 1;
-  
 }
 
 /* Define keyframes for animations */
@@ -98,14 +211,7 @@ html, body {
     /* transform: translate(0%, -35%); */
     transition: ease;
   }
-  
-  
-  /* 400%{
-    transform: translate(0,-20%);
-  } */
-  /* 100% {
-    transform: translate(0%, 0%);
-  } */
+
 }
 
 @keyframes move-right {
@@ -119,104 +225,40 @@ html, body {
     /* transform: translate(0%, 35%); */
     transition: ease
   }
-  /* to{
-    transform: scale(1,1.5);
-  } */
-  
-  /* 100% {
-    transform: translate(0%, 0%);
-  } */
 }
 
-
-/* @keyframes display{
-  move-left { to{
-    transform: translate(0,-35%);
-    transform: scale(1,1.5);
-    text-align: center;
-  }
-    
-  }
-  
-  move-right { to{
-      transform: translate(0,35%);
-      transform: scale(1,1.5);
-      text-align: center;
-    }
-      
-    
-  }
-
-} */
 .texti{
-  /* font-family: 'Work Sans', sans-serif; */
   font-weight: 800;
-  font-size: 9vw;
-  /* transform: skewY(-5deg); */
-  /* visibility: h; */
+  font-size: 10vw;
   color: rgb(255, 253, 253);
-  /* animation: display 1s cubic-bezier(.6, .0, .15, 1) 4s forwards; */
-  /* position: absolute;
-  margin-top: -26.4%;
-  margin-left: 24%; */
-  /* text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white; */
   z-index: 4;
-  font-family: 'Norwester';
   transform: scale(1,1);
   background-color: black;
   height: 40px;
   text-align: center;
-  
-                                                
-  
 }
 
-/* Team.css */
-/* ... your existing styles ... */
-
-/* Apply styles to the parallax element (red-colored rectangle) */
-#parallax {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 50px; /* Adjust the width as needed */
-  background-color: red;
-  opacity: 0; /* Initially hide the rectangle */
-  transition: opacity 0.5s ease; /* Add a smooth transition for opacity */
+@media (max-width: 750px) {
+  #text {
+    font-size: 15vw;
+    top: -80px;
+  }
+  .text-in{
+    height: calc(15vw + 20px);
+  }
+  #text:before {
+    color: lighten(var(--colorOne), 0%);
+    transform: translate(0,-35%);
+    top: 15vw;
+  }
+  #text:after {
+    color: lighten(var(--colorOne), 20%);
+    transform: translate(0,35%);
+    bottom: 15vw;
+  }
 }
-
-
-
-/* Team.css */
-/* ... your existing styles ... */
-
-/* Apply styles to the parallax element (red-colored rectangle) */
-.parallax {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 50px; /* Adjust the width as needed */
-  background-color: red;
-  opacity: 0; /* Initially hide the rectangle */
-  transition: opacity 0.5s ease; /* Add a smooth transition for opacity */
-}
-
-@font-face{
-  font-family: 'MyFont';
-  src: local('MyFont'), url(../../fonts/Calamity\ Outline.otf)  format('opentype')
-}
-@font-face{
-  font-family: 'MyNorwester';
-  src: local('MyNorwester'), url(../../fonts/norwester.otf)  format('opentype')
-}
-
-.vraj{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:center;
-  gap: 3rem;
-  width: 90vw;
-  margin-left: 10vw;
+@media (max-width: 700px) {
+  #about #speakers-content {
+    padding: 2rem 1.5rem;
+  }
 }

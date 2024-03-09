@@ -3,8 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Scrollbar from 'smooth-scrollbar';
+
+document.addEventListener('DOMContentLoaded', () => {
+  Scrollbar.init(document.querySelector('#my-scrollbar'));
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <App />
