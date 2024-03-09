@@ -1,5 +1,6 @@
 import About from "../About/About";
 import './Home.css'
+// import ImageCarousel from "./memory";
 import MainPageVideobg from "../MainPageVideobg";
 import Countdown from "./Countdown/Countdown";
 function Home(){
@@ -15,6 +16,10 @@ function Home(){
             <About/>
         </div>
         {/* <Countdown/> Add this after either having good countdown*/}
+        {/* 
+        <div id="memory-lange">
+            <ImageCarousel/>
+        </div> */}
         </>
     )
 }
