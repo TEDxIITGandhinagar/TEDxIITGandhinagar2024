@@ -14,14 +14,14 @@ export const CoreData = [
       name: "Shreyans Jain",
       imgSrc: "/team/sj.jpeg",
       designation: "Sponsorship Core",
-      email: "",
-      number: "+91 ",
-      linkedin: "",
+      email: "shreyans.jain@iitgn.ac.in",
+      number: "+91  ",
+      linkedin: "https://www.linkedin.com/in/shreyans-jain-1b56aa247/",
       insta: "",
     },
     {
       name: "Pratham Sharda",
-      imgSrc: "/team/ps.jpeg",
+      imgSrc: "/team/pratham.jpg",
       designation: "Marketing Core",
       email: "debojit.das@iitgn.ac.in",
       number: "+91 96090 18007",
@@ -88,22 +88,12 @@ export const CoreData = [
     {
       name: "Jayraj Dulange",
       imgSrc: "./Images/parth.webp",
-      designation: "Web Developer",
-      email: "parth.govale@iitgn.ac.in",
+      designation: "Web Development Lead",
+      email: "jayraj.jayraj@iitgn.ac.in",
       number: "+91 96198 69044",
       linkedin: "https://www.linkedin.com/in/parth-govale-a65120277/",
       insta: "https://instagram.com/parth_govale",
       github: "https://github.com/Demolus13"
-    },
-    {
-      name: "Vraj Shah",
-      imgSrc: "./Images/vraj.webp",
-      designation: "Web Developer",
-      email: "vraj.shah@iitgn.ac.in",
-      number: "+91 94846 38348",
-      linkedin: "https://www.linkedin.com/in/vraj-shah-6a634a254/",
-      insta: "https://www.instagram.com/vraj_shah_2811/",
-      github: "https://github.com/Vraj2811"
     },
     {
       name: "Rachit Mehta",
@@ -116,16 +106,6 @@ export const CoreData = [
       github: "https://github.com/dipesh6264",
     },
     {
-      name: "Chandrabhan Patel",
-      imgSrc: "./Images/pranav.webp",
-      designation: "Web Developer",
-      email: "pranav.joshi@iitgn.ac.in",
-      number: "+91 86989 55551",
-      linkedin: "",
-      insta: "https://instagram.com/ik_sm_stuff",
-      github: "https://github.com/PJ29072004",
-    },
-    {
       name: "Romit Mohane",
       imgSrc:
         "https://media.licdn.com/dms/image/D4D03AQEcT-uVrr0xRw/profile-displayphoto-shrink_800_800/0/1695235027134?e=1701302400&v=beta&t=IxXPN2YQlRVv4c3-2QCBcDSJLkz9viYjj_yWtDtHTpM",
@@ -135,5 +115,36 @@ export const CoreData = [
       linkedin: "https://www.linkedin.com/in/romit-mohane/",
       insta: "https://instagram.com/its_romit.m",
       github: "https://github.com/Reckadon",
+    },
+    {
+      name: "Karan Gandhi",
+      imgSrc:
+        "https://media.licdn.com/dms/image/D4D03AQEcT-uVrr0xRw/profile-displayphoto-shrink_800_800/0/1695235027134?e=1701302400&v=beta&t=IxXPN2YQlRVv4c3-2QCBcDSJLkz9viYjj_yWtDtHTpM",
+      designation: "Web Developer",
+      email: "23110279@iitgn.ac.in",
+      number: "+91 84258 05555",
+      linkedin: "https://www.linkedin.com/in/romit-mohane/",
+      insta: "https://instagram.com/its_romit.m",
+      github: "https://github.com/Reckadon",
+    },
+    {
+      name: "Chandrabhan Patel",
+      imgSrc: "./Images/pranav.webp",
+      designation: "Web Developer",
+      email: "chandrabhan.patel@iitgn.ac.in",
+      number: "+91 86989 55551",
+      linkedin: "",
+      insta: "https://instagram.com/ik_sm_stuff",
+      github: "https://github.com/PJ29072004",
+    },
+    {
+      name: "Vraj Shah",
+      imgSrc: "./Images/vraj.webp",
+      designation: "Web Developer",
+      email: "vraj.shah@iitgn.ac.in",
+      number: "+91 94846 38348",
+      linkedin: "https://www.linkedin.com/in/vraj-shah-6a634a254/",
+      insta: "https://www.instagram.com/vraj_shah_2811/",
+      github: "https://github.com/Vraj2811"
     },
   ];

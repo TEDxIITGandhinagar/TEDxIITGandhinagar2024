@@ -26,6 +26,7 @@ html {
   width: 75%;
   height: 80%;
   object-fit: cover;
+  padding-top: 120px;
 }
 
 .text-overlay {
@@ -156,8 +157,9 @@ body {
   }
 
   #myVideo {
-    max-width: 85%; /* Adjusted for smaller screens */
-    max-height: 100%; /* Adjusted for smaller screens */
+    max-width: 90%; /* Adjusted for smaller screens */
+    /* max-height: 140%; Adjusted for smaller screens */
+    height: 30vh;
   }
 
   .text-overlay {
@@ -173,16 +175,21 @@ body {
   }
 
   .imagevec {
-    max-width: 70%; /* Adjusted for smaller screens */
-    max-height: 80%; /* Adjusted for smaller screens */
+    max-width: 45%; 
+    max-height: 30%;
+    position: absolute;
+    top: 75px;
+    right: 70px;
   }
 
   .imagevec1 {
-    animation: slideInLeft 1.5s ease-in-out forwards; /* Changed animation for smaller screens */
+    animation: slideInLeft 1.5s ease-in-out forwards;
+    z-index: 4;
   }
 
   .imagevec2 {
-    animation: slideInRight 1.5s ease-in-out forwards; /* Changed animation for smaller screens */
+    animation: slideInRight 1.5s ease-in-out forwards;
+    z-index: 3;
   }
 
   @keyframes slideInLeft {
@@ -191,7 +198,7 @@ body {
       opacity: 0;
     }
     to {
-      transform: translateX(10vh);
+      transform: translateX(4vh);
       opacity: 1;
     }
   }
@@ -202,7 +209,7 @@ body {
       opacity: 0;
     }
     to {
-      transform: translateX(10vw);
+      transform: translateX(27vw);
       opacity: 1;
     }
   }
