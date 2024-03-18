@@ -1,9 +1,31 @@
+import React, {useEffect, useRef} from "react";
 import About from "../About/About";
 import './Home.css'
 // import HorizontalScrollGallery from "./memory";
 import MainPageVideobg from "../MainPageVideobg";
 
 function Home(){
+    const videoRef = useRef();
+
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              videoRef.current.play();
+            } else {
+              videoRef.current.pause();
+            }
+          });
+        },
+        {
+            threshold: 0.25
+        });
+  
+      observer.observe(videoRef.current);
+  
+      return () => observer.unobserve(videoRef.current);
+    }, []);
 
     return(
         <>
@@ -15,7 +37,7 @@ function Home(){
         </div>
         
         <div className="tubelight">
-            <h1>
+            <h2>
                 <span className="red-ted">T
                 <span className="flick d1">E</span>D
                 <span className="flick d2">X</span>
@@ -25,12 +47,13 @@ function Home(){
                 <span className="flick d5">R</span> 202
                 <span className="flick d6">4</span>
                 </span>
-            </h1>
+            </h2>
         </div>
         </div>
+        <div className="main-theme">
         <div className="theme">
-
-            <h1 id="theme-text">Reimagining Reality.</h1>
+            <video className="theme-video" ref={videoRef} src="/draft4.mp4" muted controls></video>
+        </div>
         </div>
 
         <div id="about-section">
