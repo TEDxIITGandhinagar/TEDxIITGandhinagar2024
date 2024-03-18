@@ -8,7 +8,7 @@ function About(){
       <div className="we-are-block">
         <div id="about-us-section">
           <div className="about-us-image">
-            <img src="realleusable.svg" className="img1" style={{ filter: 'grayscale(100%)' }} width="908" height="458" alt="Lobby Image"/>
+            <img src="realleusable.svg" className="img1" style={{ filter: 'grayscale(100%)' }} alt="TEDx"/>
           </div>
           <div className="about-us-info">
             <h2>ABOUT TED</h2>
@@ -17,7 +17,7 @@ function About(){
           </div>
         </div>
         <div id="history-section">
-          <div className="history-image">            <img src="akshay.jpg" className="img2" style={{ filter: 'grayscale(100%) brightness(50%) contrast(100%)' }} width="951" height="500" alt="Building Pic"/>
+          <div className="history-image"><img src="final.jpg" className="img2" style={{ filter: 'grayscale(100%) brightness(50%) contrast(100%)' }} alt="tedx-iitgn"/>
           </div>
           <div className="history-info">
             <h2>ABOUT TEDx</h2>
