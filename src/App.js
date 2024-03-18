@@ -8,6 +8,7 @@ import Talks from './components/Talks/Talks';
 import Team from './components/Team/Team';
 import Tickets from './components/Tickets/Tickets'
 import Footer from './components/Footer';
+import Schedule from './components/Schedule/Schedule';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
       <Route path="/speakers" element={<Speakers/>} />
       <Route path="/talks" element={<Talks/>} />
       <Route path="/team" element={<Team/>} />
-      <Route path="/schedule" element={<Talks/>} />
+      <Route path="/schedule" element={<Schedule/>} />
       <Route path="/tickets" element={Tickets} />
       </Routes>
       <Footer/>
