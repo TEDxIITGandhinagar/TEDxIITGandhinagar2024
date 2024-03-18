@@ -2,7 +2,7 @@ import About from "../About/About";
 import './Home.css'
 // import HorizontalScrollGallery from "./memory";
 import MainPageVideobg from "../MainPageVideobg";
-import Countdown from "./Countdown/Countdown";
+import CountdownTimer from "./Countdown/Countdown";
 function Home(){
 
     return(
@@ -15,15 +15,11 @@ function Home(){
 
         <div className="tubelight">
             <h1>
-                <span className="red-ted">TEDX</span>IITGANDHINAGAR 2024
+                <span className="red-ted">TEDX</span> <span className="iitgn">IITGANDHINAGAR 2024</span>
             </h1>
         </div>
 
-        {/* <Countdown/> */}
-                
-        {/* <div id="about-section">
-            <SectionSlider sections={sections}/>
-        </div> */}
+        <CountdownTimer/>
         <div id="about-section">
             <About/>
         </div>
@@ -31,12 +27,6 @@ function Home(){
         {/* <div id="memory-lange">
             <HorizontalScrollGallery images={['realleusable.svg','realleusable.svg','realleusable.svg','realleusable.svg']}/>
         </div> */}
-
-        {/* <div>
-            <AnimatedSection/>
-        </div> */}
-
-
         </>
     )
 }

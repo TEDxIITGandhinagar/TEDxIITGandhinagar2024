@@ -1,25 +1,24 @@
-.countdown-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    font-size: 2em;
-    font-family: "Arial", sans-serif;
-    text-align: center;
-  }
-  
-  .neon-number {
-    margin: 0 5px;
-  }
-  
-  .dd,
-  .hr,
-  .mm,
-  .ss {
-    margin-right: 20px;
-  }
-  
-  .neon-number img {
-    width: 6vw;
-    height: auto;
-  }
-  
+#countdown {
+  display: flex;
+}
+
+.counter {
+  margin-right: 10px;
+}
+
+.counter:last-child {
+  margin-right: 0;
+}
+
+.counter span {
+  display: inline-block;
+  width: 30px; /* Adjust width as needed */
+  font-size: 18px; /* Adjust font size as needed */
+  text-align: center;
+}
+
+.counter b {
+  display: block;
+  font-size: 14px;
+  color: #888; /* Adjust color as needed */
+}

@@ -9,30 +9,33 @@
     email id
 */
 
+export const LicenseeData = [
+  {
+    name: "Pratham Sharda",
+    imgSrc: "/team/pratham.jpg",
+    designation: "Licensee & Marketing Core",
+    email: "pratham.sharda@iitgn.ac.in",
+    number: "+91 96090 18007",
+    linkedin: "https://www.linkedin.com/in/debojitdas842/",
+    insta: "https://instagram.com/the_quirky_munda",
+  },
+  {
+    name: "Shreyans Jain",
+    imgSrc: "/team/sj.jpeg",
+    designation: "Co-Licensee & Sponsorship Core",
+    email: "shreyans.jain@iitgn.ac.in",
+    number: "+91  ",
+    linkedin: "https://www.linkedin.com/in/shreyans-jain-1b56aa247/",
+    insta: "",
+  }
+];
+
 export const CoreData = [
     {
-      name: "Shreyans Jain",
-      imgSrc: "/team/sj.jpeg",
-      designation: "Sponsorship Core",
-      email: "shreyans.jain@iitgn.ac.in",
-      number: "+91  ",
-      linkedin: "https://www.linkedin.com/in/shreyans-jain-1b56aa247/",
-      insta: "",
-    },
-    {
-      name: "Pratham Sharda",
-      imgSrc: "/team/pratham.jpg",
-      designation: "Marketing Core",
-      email: "debojit.das@iitgn.ac.in",
-      number: "+91 96090 18007",
-      linkedin: "https://www.linkedin.com/in/debojitdas842/",
-      insta: "https://instagram.com/the_quirky_munda",
-    },
-    {
-      name: "Balagopal",
+      name: "Balagopal Moharana",
       imgSrc: "/team/Bg.jpg",
       designation: "Sponsorship Core",
-      email: "debojit.das@iitgn.ac.in",
+      email: "balagopal.moharana@iitgn.ac.in",
       number: "+91 96090 18007",
       linkedin: "https://www.linkedin.com/in/debojitdas842/",
       insta: "https://instagram.com/the_quirky_munda",
@@ -50,7 +53,7 @@ export const CoreData = [
       name: "Saransh Sharma",
       imgSrc: "/team/Saransh.jpg",
       designation: "Content for Talk Core",
-      email: "guntassingh.saran@iitgn.ac.in",
+      email: "saransh.sharma@iitgn.ac.in",
       number: "+91 73409 64064",
       linkedin: "https://www.linkedin.com/in/guntas-singh-saran-2b8811179/",
       insta: "https://www.instagram.com/guntas.saran13/",
@@ -59,7 +62,7 @@ export const CoreData = [
       name: "Tilak Maheshwari",
       imgSrc: "/team/Tilak.jpg",
       designation: "Events Production Core",
-      email: "mangalampalli.narayana@iitgn.ac.in",
+      email: "tilak.maheshwari@iitgn.ac.in",
       number: "+91 99201 32149",
       linkedin: "https://www.linkedin.com/in/agastya-narayana/",
       insta: "https://www.instagram.com/augustyeah",
@@ -68,7 +71,7 @@ export const CoreData = [
       name: "Dhruvi Sisodiya",
       imgSrc: "/team/dhruvi.jpg",
       designation: "Design Core",
-      email: "mangalampalli.narayana@iitgn.ac.in",
+      email: "dhruvi.sisodiya@iitgn.ac.in",
       number: "+91 99201 32149",
       linkedin: "https://www.linkedin.com/in/agastya-narayana/",
       insta: "https://www.instagram.com/augustyeah",
@@ -77,7 +80,7 @@ export const CoreData = [
       name: "Darshan Zhala",
       imgSrc: "/team/darshan.jpg",
       designation: "Finance Core",
-      email: "mangalampalli.narayana@iitgn.ac.in",
+      email: "darshan.zhala@iitgn.ac.in",
       number: "+91 99201 32149",
       linkedin: "https://www.linkedin.com/in/agastya-narayana/",
       insta: "https://www.instagram.com/augustyeah",

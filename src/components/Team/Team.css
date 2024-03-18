@@ -84,7 +84,7 @@ html, body {
   height: 300px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  filter: grayscale(1) contrast(1.1);
+  /* filter: grayscale(1) contrast(1.1); */
 }
 #about #speakers-content .about-card > div.about-links-container {
   display: flex;

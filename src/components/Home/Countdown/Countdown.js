@@ -1,60 +1,52 @@
-import React, { useEffect, useState } from 'react';
-import './Countdown.css';
+import React, { useEffect, useState, useRef } from 'react';
 
-const Countdown = () => {
-  const finalAnimationsFolder = "./finalAnimations";
-  const days = 5; 
-  const initialCountdown = days * 24 * 60 * 60;
-  const [countdown, setCountdown] = useState(initialCountdown);
+const CountdownTimer = () => {
+  const [timeLeft, setTimeLeft] = useState(0);
+  const spanRefs = useRef([]);
 
   useEffect(() => {
-    const countdownInterval = setInterval(() => {
-      setCountdown((prevCountdown) => {
-        if (prevCountdown > 0) {
-          return prevCountdown - 1;
-        }
-        return prevCountdown;
-      });
-    }, 1000);
+    let d = new Date();
+    d = new Date(d.getFullYear(), d.getMonth() + 1, 1, 0, 10, 0) - d;
+    const s = [1000, 60, 60, 24];
 
-    return () => clearInterval(countdownInterval);
+    const vset = (e, t, c) => {
+      const m = c ? t % c : t;
+      if (e) {
+        e.setAttribute('b', m < 10 ? '0' + m : m);
+        e.classList.remove('ping');
+        setTimeout(() => e.classList.add('ping'), 10);
+      }
+      return m;
+    };
 
+    const calc = (t, i = 0, b = 0) => {
+      if (!s[i]) return;
+      t = opti(t, s[i]);
+      if (vset(spanRefs.current[i], t, s[i + 1]) === s[i + 1] - 1 || b) calc(t, i + 1, b);
+    };
+
+    const count = (b = 0) => {
+      setTimeLeft(prevTimeLeft => prevTimeLeft - 1000);
+      calc(timeLeft, 0, b);
+    };
+
+    const opti = (v, n) => (v - (v % n)) / n;
+
+    const interval = setTimeout(() => !count(1) && setInterval(count, 1000), d % 1000);
+
+    return () => clearInterval(interval);
   }, []);
 
-  const updateCountdown = () => {
-    const daysRemaining = Math.floor(countdown / (24 * 60 * 60));
-    const hoursRemaining = Math.floor((countdown % (24 * 60 * 60)) / 3600);
-    const minutesRemaining = Math.floor((countdown % 3600) / 60);
-    const secondsRemaining = countdown % 60;
-
-    return (
-      <div id="countdown" className="countdown-container">
-        <div className="neon-number dd">{getNeonImage(Math.floor((daysRemaining % 100) / 10))}</div>
-        <div className="neon-number dd">{getNeonImage(daysRemaining % 10)}</div>
-
-        <div className="neon-number hr">{getNeonImage(Math.floor(hoursRemaining / 10))}</div>
-        <div className="neon-number hr">{getNeonImage(hoursRemaining % 10)}</div>
-
-        <div className="neon-number mm">{getNeonImage(Math.floor(minutesRemaining / 10))}</div>
-        <div className="neon-number mm">{getNeonImage(minutesRemaining % 10)}</div>
-
-        <div className="neon-number ss">{getNeonImage(Math.floor(secondsRemaining / 10))}</div>
-        <div className="neon-number ss">{getNeonImage(secondsRemaining % 10)}</div>
-      </div>
-    );
-  };
-
-  const getNeonImage = (number) => {
-    const gifFilename = `${number}.gif`;
-    const gifPath = `${finalAnimationsFolder}/${gifFilename}`;
-    return <img src={gifPath} alt={formatNumber(number)} />;
-  };
-
-  const formatNumber = (number) => {
-    return number < 10 ? `0${number}` : number;
-  };
-
-  return updateCountdown();
+  return (
+    <div id="countdown">
+      {['Days', 'Hrs', 'Min', 'Sec'].map((t, index) => (
+        <div className="counter" key={index}>
+          <span ref={ref => spanRefs.current[index] = ref} b="--"></span>
+          <b>{t}</b>
+        </div>
+      ))}
+    </div>
+  );
 };
 
-export default Countdown;
+export default CountdownTimer;

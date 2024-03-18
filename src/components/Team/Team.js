@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Team.css";
-import { CoreData, TechTeamData } from "./AboutData";
+import { LicenseeData, CoreData, TechTeamData } from "./AboutData";
 
 export default function About() {
   useEffect(() => {
@@ -19,6 +19,13 @@ export default function About() {
         <div div id="text"><div className="text-in">OUR TEAM</div></div>
     </div>
         <div id="speakers-content">
+        <h1 className="orbitron">License Holders</h1>
+          <div>
+            {LicenseeData.map((about, index) => {
+              return <Card key={index} about={about} />;
+            })}
+          </div>
+
           <h1 className="orbitron">CORES</h1>
           <div>
             {CoreData.map((about, index) => {

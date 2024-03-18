@@ -10,7 +10,6 @@
     color: rgba(255, 255, 255, 0.137); 
     text-align: center;
     justify-content: center;  
-    /* font-family: Arial; */
 }
 
 .tubelight span{
@@ -23,10 +22,14 @@
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
     line-height: 0.7em;
     outline: none;
+    animation-delay: 2s;
+}
+.tubelight .iitgn{
     animation: animate1 10s linear infinite;
 }
-.tubelight span{
-    animation: animate2 5s linear infinite;
+.tubelight .red-ted{
+    animation: animate2 1s linear infinite;
+    text-shadow: 0px 0px 40px red;
 }
 
 
@@ -37,7 +40,7 @@
         color: rgba(255, 255, 255, 0.137);
         text-shadow: none;
     }
-    10%,20%,30%,40%,50%,54%,68%,100%
+    10%,40%,50%,68%,100%
     {
         color: rgb(255, 255, 255);
         text-shadow: 0 0 10px rgb(255, 255, 255),
@@ -47,20 +50,32 @@
         0 0 90px rgb(255, 255, 255);
     }
 }
-@keyframes animate2
-{
-    0%
-    {
-        color: rgba(255, 0, 0, 0.186);
-        text-shadow: none;
+@keyframes animate2 {
+    0%{
+        filter: blur(5px) brightness(1);
     }
-    100%
-    {
-        color: rgb(253, 0, 0);
-        text-shadow: 0 0 10px red,
-        0 0 20px red,
-        0 0 40px red,
-        0 0 80px red,
-        0 0 160px red,;
+    4%{
+        filter: blur(10px) brightness(0);
+    }
+    6%{
+        filter: blur(5px) brightness(1);
+    }
+    12%{
+        filter: blur(10px) brightness(0);
+    }
+    32%{
+        filter: blur(10px) brightness(1);
+    }
+    52%{
+        filter: blur(10px) brightness(0);
+    }
+    72%{
+        filter: blur(10px) brightness(1);
+    }
+    82%{
+        filter: blur(10px) brightness(0);
+    }
+    92%{
+        filter: blur(0px) brightness(1);
     }
 }
