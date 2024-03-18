@@ -147,7 +147,7 @@ body {
 
 @media(max-width:1000px){
   .container {
-    height: 100vh;
+    height: 100%;
     width: 100%;
   }
 
@@ -163,15 +163,25 @@ body {
   }
 
   .text-overlay {
-    top: 50%;
-    left: 50%; /* Centered on smaller screens */
+    top: 23%;
+    left: 31%; /* Centered on smaller screens */
     transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 3;
+    text-align: center;
   }
 
   .image-container {
     width: 100%; /* Adjusted for smaller screens */
     height: auto; /* Adjusted for smaller screens */
     flex-direction: column; /* Stacked images on smaller screens */
+  }
+  #tedx{
+    color: red;
+  }
+  #gn #reveal{
+    color: white;
   }
 
   .imagevec {
