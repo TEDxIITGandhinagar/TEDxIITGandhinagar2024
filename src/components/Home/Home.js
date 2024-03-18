@@ -3,7 +3,6 @@ import './Home.css'
 // import HorizontalScrollGallery from "./memory";
 import MainPageVideobg from "../MainPageVideobg";
 import Countdown from "./Countdown/Countdown";
-import AnimatedSection from "./rand";
 function Home(){
 
     return(
