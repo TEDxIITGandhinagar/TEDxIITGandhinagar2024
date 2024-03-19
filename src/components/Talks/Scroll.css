@@ -25,8 +25,8 @@
     position: relative;
     transition: all 0.1s ease;
     content: " ";
-    border-left: 4px solid #ff0000;
-    border-bottom: 4px solid #ff0000;
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
     width: 20px;
     height: 20px;
     transform: rotate(45deg);
@@ -43,8 +43,8 @@
     position: relative;
     transition: all 0.1s ease;
     content: " ";
-    border-right: 4px solid #ff0000;
-    border-top: 4px solid #ff0000;
+    border-right: 4px solid white;
+    border-top: 4px solid white;
     width: 20px;
     height: 20px;
     transform: rotate(45deg);
@@ -66,12 +66,34 @@
     border-left: 2px solid var(--dark);
     border-right: 2px solid var(--dark);
     display: flex;
-    flex: 1 1 auto;
+    /* flex: 1 1 auto; */
     overflow-x: scroll;
+    justify-content: space-between;
   }
   
   .scroll-toggle__list-item {
     flex: 0 0 auto;
     padding: 10px;
   }
-  
+  /* Scroll.css */
+.scroll-toggle__list {
+  /* Set the width and height of the scroll bar */
+  scrollbar-width:auto;
+  scrollbar-color: white rgb(0, 0, 0); /* Scrollbar track color and scrollbar thumb color */
+
+  /* Webkit-based browsers */
+  &::-webkit-scrollbar {
+    width: 30px; /* Width of the scrollbar */
+  }
+
+  /* Webkit-based browsers */
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0); /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Roundness of the scrollbar thumb */
+  }
+
+  /* Webkit-based browsers */
+  &::-webkit-scrollbar-track {
+    background-color: white; /* Color of the scrollbar track */
+  }
+}

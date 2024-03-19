@@ -2,8 +2,11 @@ import React from 'react'
 import './Playbutton.css'
 
 export default function Playbutton() {
+
+  const divStyle={cursor: 'pointer',}
+  
   return (
-    <div>
+    <div style={divStyle}>
       <div className="wrapper">
       <div className="circle pulse">
         <div className="circle">

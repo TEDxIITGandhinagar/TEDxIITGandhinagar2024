@@ -236,4 +236,5 @@ html, body {
   justify-content:center;
   gap: 15px;
   width: 100vw;
+  height: 150vw;
 }

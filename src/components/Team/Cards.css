@@ -3,7 +3,7 @@
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   /* margin-left: -40%; Adjust margin as needed */
-  height: 50vh;
+  height: 30vw;
   width: 20vw;
   background: url(Cardsample.png), linear-gradient(to top, rgb(0, 0, 0), rgb(255, 255, 255));
   /* background: linear-gradient(to top, rgb(229, 38, 70), rgb(255, 115, 0)); */

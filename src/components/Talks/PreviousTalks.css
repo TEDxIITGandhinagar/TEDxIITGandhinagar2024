@@ -1,10 +1,16 @@
 .box{
     margin-left: 1vw;
     width: 20vw;
-    height: 20vh;
+    height: 15vw;
     background-color: red;
-    background-image: url(andrew.jpg);
+    /* background-image: url(andrew.jpg); */
+    background-size: cover;
 }
 .description{
     color: white;
+    height: 4vh;
+}
+.my-image-class{
+    width: 20vw;
+    height: 15vw;
 }
