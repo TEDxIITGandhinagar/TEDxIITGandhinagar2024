@@ -55,6 +55,7 @@
 }
 .flick{
     animation: flicker 1500ms linear 5s;
+    animation-iteration-count: 3;
 }
 .tubelight .d1{
     animation-delay: 1.8s;

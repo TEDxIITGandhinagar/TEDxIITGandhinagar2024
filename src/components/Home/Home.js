@@ -19,13 +19,20 @@ function Home(){
           });
         },
         {
-            threshold: 0.25
-        });
-  
-      observer.observe(videoRef.current);
-  
-      return () => observer.unobserve(videoRef.current);
-    }, []);
+          threshold: 0.25
+        }
+      );
+    
+      if (videoRef.current) {
+        observer.observe(videoRef.current);
+      }
+    
+      return () => {
+        if (videoRef.current) {
+          observer.unobserve(videoRef.current);
+        }
+      };
+    }, []);    
 
     return(
         <>
