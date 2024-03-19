@@ -84,7 +84,7 @@ html, body {
   height: 300px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  filter: grayscale(1) contrast(1.1);
+  filter: contrast(1.1);
 }
 #about #speakers-content .about-card > div.about-links-container {
   display: flex;
@@ -106,8 +106,8 @@ html, body {
   position: relative;
   color: #ffedfe;
   z-index: 10;
-  padding-bottom: 2px;
-  margin-top: -60px;
+  padding-bottom: 20px;
+  margin-top: -54px;
   margin-bottom: 11px;
   font-weight: 600;
   font-size: 1.5rem;

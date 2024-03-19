@@ -14,6 +14,7 @@
     "aos": "^2.3.4",
     "bootstrap": "^5.3.2",
     "gsap": "^3.12.5",
+    "locomotive-scroll": "^4.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-parallax": "^3.5.1",
@@ -22,6 +23,7 @@
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.9.0",
     "react-scroll-motion": "^0.3.2",
+    "scrollmagic": "^2.0.8",
     "smooth-scrollbar": "^8.8.4",
     "styled-components": "^6.1.7",
     "web-vitals": "^2.1.4"

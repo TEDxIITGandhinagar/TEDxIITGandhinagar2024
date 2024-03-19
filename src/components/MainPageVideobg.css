@@ -26,6 +26,7 @@ html {
   width: 75%;
   height: 80%;
   object-fit: cover;
+  margin-top: 75px;
 }
 
 .text-overlay {
@@ -146,7 +147,7 @@ body {
 
 @media(max-width:1000px){
   .container {
-    height: 100vh;
+    height: 100%;
     width: 100%;
   }
 
@@ -156,14 +157,19 @@ body {
   }
 
   #myVideo {
-    max-width: 85%; /* Adjusted for smaller screens */
-    max-height: 100%; /* Adjusted for smaller screens */
+    max-width: 90%; /* Adjusted for smaller screens */
+    /* max-height: 140%; Adjusted for smaller screens */
+    height: 30vh;
   }
 
   .text-overlay {
-    top: 50%;
-    left: 50%; /* Centered on smaller screens */
+    top: 23%;
+    left: 31%; /* Centered on smaller screens */
     transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 3;
+    text-align: center;
   }
 
   .image-container {
@@ -171,18 +177,29 @@ body {
     height: auto; /* Adjusted for smaller screens */
     flex-direction: column; /* Stacked images on smaller screens */
   }
+  #tedx{
+    color: red;
+  }
+  #gn #reveal{
+    color: white;
+  }
 
   .imagevec {
-    max-width: 70%; /* Adjusted for smaller screens */
-    max-height: 80%; /* Adjusted for smaller screens */
+    max-width: 45%; 
+    max-height: 30%;
+    position: absolute;
+    top: 75px;
+    right: 70px;
   }
 
   .imagevec1 {
-    animation: slideInLeft 1.5s ease-in-out forwards; /* Changed animation for smaller screens */
+    animation: slideInLeft 1.5s ease-in-out forwards;
+    z-index: 4;
   }
 
   .imagevec2 {
-    animation: slideInRight 1.5s ease-in-out forwards; /* Changed animation for smaller screens */
+    animation: slideInRight 1.5s ease-in-out forwards;
+    z-index: 3;
   }
 
   @keyframes slideInLeft {
@@ -191,7 +208,7 @@ body {
       opacity: 0;
     }
     to {
-      transform: translateX(10vh);
+      transform: translateX(4vh);
       opacity: 1;
     }
   }
@@ -202,7 +219,7 @@ body {
       opacity: 0;
     }
     to {
-      transform: translateX(10vw);
+      transform: translateX(27vw);
       opacity: 1;
     }
   }

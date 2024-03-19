@@ -21,9 +21,6 @@ function MainPageVideobg() {
           <div className='hype'>
             <h1 id='tedx'>TEDx</h1><h1 id='gn'>IITGandhinagar</h1>
           </div>
-          <div className='revealing'>
-            <h1>Revealing Soon</h1>
-          </div>
         </div>
       )}
       <div className="image-container">
