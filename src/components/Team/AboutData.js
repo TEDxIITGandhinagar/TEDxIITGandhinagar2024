@@ -90,7 +90,7 @@ export const CoreData = [
   export const TechTeamData = [
     {
       name: "Jayraj Dulange",
-      imgSrc: "./Images/parth.webp",
+      imgSrc: "/tech_team/Jayraj.jpeg",
       designation: "Web Development Lead",
       email: "jayraj.jayraj@iitgn.ac.in",
       number: "+91 9145609395",
@@ -100,7 +100,7 @@ export const CoreData = [
     },
     {
       name: "Rachit Mehta",
-      imgSrc: "./Images/dipesh.webp",
+      imgSrc: "/tech_team/rachit.jpg",
       designation: "Web Developer",
       email: "dipesh.patidar@iitgn.ac.in",
       number: "+91 7976913363",
@@ -109,24 +109,23 @@ export const CoreData = [
       github: "https://github.com/Rachit23110261",
     },
     {
-      name: "Romit Mohane",
-      imgSrc:
-        "https://media.licdn.com/dms/image/D4D03AQEcT-uVrr0xRw/profile-displayphoto-shrink_800_800/0/1695235027134?e=1701302400&v=beta&t=IxXPN2YQlRVv4c3-2QCBcDSJLkz9viYjj_yWtDtHTpM",
-      designation: "Web Developer",
-      email: "23110279@iitgn.ac.in",
-      number: "+91 84258 05555",
-      linkedin: "https://in.linkedin.com/in/romit-mohane",
-      insta: "https://instagram.com/its_romit.m",
-      github: "https://github.com/Reckadon",
-    },
-    {
       name: "Chandrabhan Patel",
-      imgSrc: "./Images/pranav.webp",
-      designation: "Lighting Coordinator",
+      imgSrc: "/tech_team/chandrabhan.jpeg",
+      designation: "Web Developer",
       email: "chandrabhan.patel@iitgn.ac.in",
       number: "+91 6376471802",
       linkedin: "https://in.linkedin.com/in/cpatel321",
       insta: "https://www.instagram.com/chandrabhan._.patel/",
       github: "https://github.com/cpatel321",
+    },
+    {
+      name: "Vraj Shah",
+      imgSrc: "/tech_team/vraj.webp",
+      designation: "Web Developer",
+      email: "vraj.shah@iitgn.ac.in",
+      number: "+91 94846 38348",
+      linkedin: "https://in.linkedin.com/in/vraj-shah-6a634a254",
+      insta: "https://www.instagram.com/vraj_shah_2811/",
+      github: "https://github.com/Vraj2811",
     }
   ];

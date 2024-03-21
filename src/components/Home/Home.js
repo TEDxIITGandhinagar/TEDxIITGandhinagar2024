@@ -59,7 +59,7 @@ function Home(){
         </div>
         <div className="main-theme">
         <div className="theme">
-            <video className="theme-video" ref={videoRef} src="/draft4.mp4" muted controls></video>
+            <video className="theme-video" ref={videoRef} src="/TEDxIITGandhinagar_2024_Theme_Release.mp4" muted controls></video>
         </div>
         </div>
 
