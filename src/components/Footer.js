@@ -47,8 +47,8 @@ function Footer() {
                             <li>Near Palaj</li>
                             <li>Gandhinagar, Gujarat, India - 382355</li>
                             <div className="contact-numbers">
-                                <li><a href="tel:9713440242">Pratham Sharda: +91 9713440242</a></li>
-                                <li><a href="tel:8005499671">Shreyans Jain: +91 8005499671</a></li>
+                                <li><a href="tel:9879591447">Pratham Sharda: +91 9713440242</a></li>
+                                <li><a href="tel:9502685029">Shreyans Jain: +91 8005499671</a></li>
                             </div>
                         </ul>
                     </div>

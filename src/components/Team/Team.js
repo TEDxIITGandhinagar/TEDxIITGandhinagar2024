@@ -9,7 +9,6 @@ export default function About() {
         var lr = document.querySelector('html');
         window.addEventListener('click', () => {
           var newone = lr.cloneNode(true);
-          // lr.parentNode.replaceChild(newone, lr);
           lr = newone;
         });
       }, []);
