@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/TEDxIITGandhinagar2024/static/css/main.2a6a2f77.css",
+    "main.js": "/TEDxIITGandhinagar2024/static/js/main.18ed37ef.js",
+    "static/js/787.9dd674d3.chunk.js": "/TEDxIITGandhinagar2024/static/js/787.9dd674d3.chunk.js",
+    "static/media/Orbitron.ttf": "/TEDxIITGandhinagar2024/static/media/Orbitron.7228a1c750b75b23bdb4.ttf",
+    "static/media/Calamity Outline.otf": "/TEDxIITGandhinagar2024/static/media/Calamity Outline.8eaa3881eea26a7ae06b.otf",
+    "static/media/Calamity Regular.otf": "/TEDxIITGandhinagar2024/static/media/Calamity Regular.abe901c1019ce0156bf6.otf",
+    "static/media/norwester.otf": "/TEDxIITGandhinagar2024/static/media/norwester.696306af41a3a74048f6.otf",
+    "index.html": "/TEDxIITGandhinagar2024/index.html",
+    "main.2a6a2f77.css.map": "/TEDxIITGandhinagar2024/static/css/main.2a6a2f77.css.map",
+    "main.18ed37ef.js.map": "/TEDxIITGandhinagar2024/static/js/main.18ed37ef.js.map",
+    "787.9dd674d3.chunk.js.map": "/TEDxIITGandhinagar2024/static/js/787.9dd674d3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a6a2f77.css",
+    "static/js/main.18ed37ef.js"
+  ]
+}
