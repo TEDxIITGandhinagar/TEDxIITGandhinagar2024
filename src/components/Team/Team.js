@@ -9,7 +9,6 @@ export default function About() {
         var lr = document.querySelector('html');
         window.addEventListener('click', () => {
           var newone = lr.cloneNode(true);
-          // lr.parentNode.replaceChild(newone, lr);
           lr = newone;
         });
       }, []);
@@ -61,14 +60,14 @@ const Card = ({ about, github = false }) => {
         <a href={about.linkedin} rel="noreferrer" target="_blank">
           <img
             alt="linkedIn profile link"
-            src="/linkedin.svg"
+            src="linkedin.svg"
             className="about-links"
           />
         </a>
         <a href={about.insta} rel="noreferrer" target="_blank">
           <img
             alt="instagram profile link"
-            src="/instagram.svg"
+            src="instagram.svg"
             className="about-links"
           />
         </a>
@@ -76,7 +75,7 @@ const Card = ({ about, github = false }) => {
           <a href={about.github} rel="noreferrer" target="_blank">
             <img
               alt="github profile link"
-              src="/github.svg"
+              src="github.svg"
               className="about-links"
             />
           </a>
@@ -84,7 +83,7 @@ const Card = ({ about, github = false }) => {
           <a href={`mailto:${about.email}`} rel="noreferrer" target="_blank">
             <img
               alt="mail id"
-              src="/envelope.svg"
+              src="envelope.svg"
               className="about-links"
             />
           </a>

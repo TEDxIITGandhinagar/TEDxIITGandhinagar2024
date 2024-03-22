@@ -2,6 +2,7 @@
   "name": "tedx",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sites.iitgn.ac.in/tedxiitgandhinagar/",
   "dependencies": {
     "@fontsource/norwester": "^5.0.7",
     "@fortawesome/fontawesome-free": "^6.5.1",
@@ -31,7 +32,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

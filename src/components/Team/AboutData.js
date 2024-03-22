@@ -12,7 +12,7 @@
 export const LicenseeData = [
   {
     name: "Pratham Sharda",
-    imgSrc: "/team/pratham.jpg",
+    imgSrc: "team/pratham.jpg",
     designation: "Licensee & Marketing Core",
     email: "pratham.sharda@iitgn.ac.in",
     number: "+91 9879591447",
@@ -21,7 +21,7 @@ export const LicenseeData = [
   },
   {
     name: "Shreyans Jain",
-    imgSrc: "/team/sj.jpeg",
+    imgSrc: "team/sj.jpeg",
     designation: "Co-Licensee & Sponsorship Core",
     email: "shreyans.jain@iitgn.ac.in",
     number: "+91 9502685029",
@@ -33,7 +33,7 @@ export const LicenseeData = [
 export const CoreData = [
     {
       name: "Balagopal Moharana",
-      imgSrc: "/team/Bg.jpg",
+      imgSrc: "team/Bg.jpg",
       designation: "Sponsorship Core",
       email: "balagopal.moharana@iitgn.ac.in",
       number: "+91 9831167164",
@@ -42,7 +42,7 @@ export const CoreData = [
     },
     {
       name: "Parth Govale",
-      imgSrc: "/team/pg.jpg",
+      imgSrc: "team/pg.jpg",
       designation: "Design Core",
       email: "parth.govale@iitgn.ac.in",
       number: "+91 96198 69044",
@@ -51,7 +51,7 @@ export const CoreData = [
     },
     {
       name: "Saransh Sharma",
-      imgSrc: "/team/Saransh.jpg",
+      imgSrc: "team/Saransh.jpg",
       designation: "Content for Talk Core",
       email: "saransh.sharma@iitgn.ac.in",
       number: "+91 73409 64064",
@@ -60,7 +60,7 @@ export const CoreData = [
     },
     {
       name: "Tilak Maheshwari",
-      imgSrc: "/team/Tilak.jpg",
+      imgSrc: "team/Tilak.jpg",
       designation: "Events Production Core",
       email: "tilak.maheshwari@iitgn.ac.in",
       number: "+91 99201 32149",
@@ -69,7 +69,7 @@ export const CoreData = [
     },
     {
       name: "Dhruvi Sisodiya",
-      imgSrc: "/team/dhruvi.jpg",
+      imgSrc: "team/dhruvi.jpg",
       designation: "Design Core",
       email: "dhruvi.sisodiya@iitgn.ac.in",
       number: "+91 99201 32149",
@@ -78,7 +78,7 @@ export const CoreData = [
     },
     {
       name: "Darshan Zala",
-      imgSrc: "/team/darshan.jpg",
+      imgSrc: "team/darshan.jpg",
       designation: "Finance Core",
       email: "darshan.zhala@iitgn.ac.in",
       number: "+91 99201 32149",
@@ -90,7 +90,7 @@ export const CoreData = [
   export const TechTeamData = [
     {
       name: "Jayraj Dulange",
-      imgSrc: "/tech_team/Jayraj.jpeg",
+      imgSrc: "tech_team/Jayraj.jpeg",
       designation: "Web Development Lead",
       email: "jayraj.jayraj@iitgn.ac.in",
       number: "+91 9145609395",
@@ -100,7 +100,7 @@ export const CoreData = [
     },
     {
       name: "Rachit Mehta",
-      imgSrc: "/tech_team/rachit.jpg",
+      imgSrc: "tech_team/rachit.jpg",
       designation: "Web Developer",
       email: "dipesh.patidar@iitgn.ac.in",
       number: "+91 7976913363",
@@ -110,7 +110,7 @@ export const CoreData = [
     },
     {
       name: "Chandrabhan Patel",
-      imgSrc: "/tech_team/chandrabhan.jpeg",
+      imgSrc: "tech_team/chandrabhan.jpeg",
       designation: "Web Developer",
       email: "chandrabhan.patel@iitgn.ac.in",
       number: "+91 6376471802",
@@ -120,7 +120,7 @@ export const CoreData = [
     },
     {
       name: "Vraj Shah",
-      imgSrc: "/tech_team/vraj.webp",
+      imgSrc: "tech_team/vraj.webp",
       designation: "Web Developer",
       email: "vraj.shah@iitgn.ac.in",
       number: "+91 94846 38348",
