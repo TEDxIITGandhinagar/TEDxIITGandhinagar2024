@@ -30,3 +30,46 @@
     font-size: 39px;
     margin-bottom: 0;
 }
+@media (max-width: 660px) {
+    #schedule1{
+        font-size: 40px;
+    }
+    #schedule2{
+        font-size: 30px;
+    }
+    #schedule3{
+        font-size: 35px;
+    }
+    #schedule4{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 520px) {
+    #schedule1{
+        font-size: 30px;
+    }
+    #schedule2{
+        font-size: 25px;
+    }
+    #schedule3{
+        font-size: 30px;
+    }
+    #schedule4{
+        font-size: 20px;
+    }
+}
+@media (max-width: 400px) {
+    #schedule1{
+        font-size: 25px;
+    }
+    #schedule2{
+        font-size: 25px;
+    }
+    #schedule3{
+        font-size: 30px;
+    }
+    #schedule4{
+        font-size: 20px;
+    }
+}
