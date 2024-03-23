@@ -47,7 +47,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #e03a3c;
+    color: #ff0003;
     text-decoration: none;
 }
 
@@ -101,8 +101,8 @@ footer a:hover {
 
 .brands:hover {
     color: #fff;
-    border: 2px solid #e03a3c;
-    background-color: #e03a3c;
+    border: 2px solid #ff0003;
+    background-color: #ff0003;
 }
 
 .fa-facebook-f {
@@ -136,7 +136,7 @@ a {
 }
 
 a:hover {
-    color: #e03a3c;
+    color: #ff0003;
 }
 
 .social-handles li {

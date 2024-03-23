@@ -72,7 +72,7 @@ function Navbar() {
           <NavLink to="/" onClick={() => handleNavLinkClick("home")}>HOME</NavLink>
           <Link onClick={() => handleNavLinkClick("about")}>ABOUT</Link>
           <NavLink to="/speakers" onClick={() => handleNavLinkClick("speakers")}>SPEAKERS</NavLink>
-          <NavLink to="/talks" onClick={() => handleNavLinkClick("talks")}>TALKS</NavLink>
+          {/* <NavLink to="/talks" onClick={() => handleNavLinkClick("talks")}>TALKS</NavLink> */}
           <NavLink to="/team" onClick={() => handleNavLinkClick("team")}>TEAM</NavLink>
           <NavLink to="/schedule" onClick={() => handleNavLinkClick("schedule")}>SCHEDULE</NavLink>
           <NavLink to="/tickets" style={isMobileMenuOpen ? { paddingBottom: '1rem' } : {}} onClick={() => handleNavLinkClick("tickets")}>GET TICKETS</NavLink>

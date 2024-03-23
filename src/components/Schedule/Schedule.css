@@ -1,0 +1,32 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#schedule1{
+    color: white;
+    font-size: 52px;
+    margin-bottom: 0;
+}
+
+#schedule2{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+#schedule3{
+    color: white;
+    font-size: 39px;
+}
+#redd{
+    color: red;
+}
+#schedule4{
+    color: white;
+    font-size: 39px;
+    margin-bottom: 0;
+}
