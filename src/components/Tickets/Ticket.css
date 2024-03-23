@@ -50,6 +50,13 @@
     z-index: 1;
 }
 
+.heading3{
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+    z-index: 1;
+}
+
 #tedd{
     color: red;
 }
@@ -83,13 +90,17 @@
     cursor: pointer;
     text-decoration: none;
     color: #ffffff;
-    border: 4px solid transparent;
+    border: 1px solid #fc1111;
+    background-color: transparent;
+    padding: 16px;
+    margin-right: 10px;
+    border-radius: 10px;
 }
 
 .portfolio-experiment a .text {
     display: block;
     transition: transform 0.3s 0.6s ease;
-    transform: translateY(24px);
+    transform: translateY(5px);
     font-size: 32px;
 }
 
@@ -109,33 +120,6 @@
     position: absolute;
     background: #fc1111;
     transition: transform 0.3s ease;
-}
-
-.portfolio-experiment a .line.-right {
-    top: 0;
-    right: 0;
-    width: 4px;
-    height: 100%;
-    transform: scaleY(0);
-    transform-origin: bottom;
-}
-
-.portfolio-experiment a .line.-top {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    transform: scaleX(0);
-    transform-origin: right;
-}
-
-.portfolio-experiment a .line.-left {
-    bottom: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    transform: scaleY(0);
-    transform-origin: top;
 }
 
 .portfolio-experiment a .line.-bottom {
@@ -163,3 +147,23 @@
     transform: scaleX(1);
     transition: transform 0.2s 0.1s ease;
 }
+
+@media (max-width: 460px) {
+    .portfolio-experiment a .text {
+        display: block;
+        transition: transform 0.3s 0.6s ease;
+        transform: translateY(2px);
+        font-size: 15px;
+    }
+    .portfolio-experiment a:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        transition: transform 0.3s 0.3s ease;
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+} 

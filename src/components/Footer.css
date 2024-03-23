@@ -4,6 +4,7 @@ footer {
     background: black;
     padding: 30px 0;
     font-size: 16px;
+    position: relative;
 }
 
 .sponser {
