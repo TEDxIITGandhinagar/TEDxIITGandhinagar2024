@@ -12,7 +12,7 @@ export const SpeakerData = [
     {
         name: "Dutee Chand",
         imgSrc: "/Dutee_Chand.jpg",
-        text: "Twice an Olympian, she is an Asian Games Silver medalist, setting national records in 100m and 200m events. First Indian to win a gold in 100m event. Challenged IAAF regulations on hyperandrogenism and won. She is a Arjun awarde winner.",
+        text: "Twice an Olympian, she is an Asian Games Silver medalist, setting national records in 100m and 200m events. First Indian to win a gold in 100m event. Challenged IAAF regulations on hyperandrogenism and won. She is an Arjun awarde winner.",
         Linkedin: "#",
         Instagram: "https://www.instagram.com/duteechand/",
     },
