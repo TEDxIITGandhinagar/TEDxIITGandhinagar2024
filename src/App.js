@@ -2,7 +2,6 @@ import './App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router,Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
-// import About from './components/About/About'; 
 import Speakers from './components/Speakers/Speakers';
 import Talks from './components/Talks/Talks'; 
 import Team from './components/Team/Team';
@@ -20,7 +19,7 @@ function App() {
       <Route path="/talks" element={<Talks/>} />
       <Route path="/team" element={<Team/>} />
       {/* <Route path="/schedule" element={<Schedule/>} /> */}
-      <Route path="/tickets" element={Tickets} />
+      <Route path="/tickets" element={<Tickets/>} />
       </Routes>
       <Footer/>
     </Router>
