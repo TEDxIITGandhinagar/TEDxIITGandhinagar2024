@@ -269,7 +269,7 @@ html {
     }
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 450px) {
     .history-image img{
       position: absolute;
       right: -220px;
