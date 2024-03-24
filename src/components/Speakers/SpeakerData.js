@@ -19,7 +19,7 @@ export const SpeakerData = [
     {
         name: "Lt General A. Arun",
         imgSrc: "/arun.webp",
-        text: "He is a highly decorated officer of the Indian Army. Recipient of the Param Vishisht Seva Medal(2024), Vishisht Seva Medal(2015) and Sena Medal(2005). Four Chief of the Army Staff's Commendations Famous for securing AIR 13 in JEE and went ahead to join NDA to serve the nation.",
+        text: "He is a highly decorated officer of the Indian Army. Recipient of the Param Vishisht Seva Medal(2024), Vishisht Seva Medal(2015) and Sena Medal(2005). Four Chief of the Army Staff's Commendations. Famous for securing AIR 13 in JEE and went ahead to join NDA to serve the nation.",
         Linkedin: "#",
         Instagram: "https://www.instagram.com/tedx.iitgandhinagar/",
     },
