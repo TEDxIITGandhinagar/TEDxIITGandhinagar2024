@@ -16,7 +16,7 @@ function Tickets() {
                 <source src='bg.mp4' type='video/mp4' />
             </video>
             <h1 className='heading1'>Welcome to <span id='tedd'>TEDx</span>IITGandhinagar 2024!</h1>
-            <h1 className='heading2'>Buy the Tickets now! (Inclusive of lunch)</h1>
+            <h1 className='heading2'>Buy the Tickets now!</h1>
             <div className='choose'>
                 <div className='comp portfolio-experiment'>
                     <a className='no-hover' onClick={handleChoice1Click}>
