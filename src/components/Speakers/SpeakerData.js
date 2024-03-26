@@ -24,31 +24,18 @@ export const SpeakerData = [
         Instagram: "https://www.instagram.com/tedx.iitgandhinagar/",
     },
     {
+        name: "Ishkaran Singh Bhandari",
+        imgSrc: "/ishkaran_cropped.png",
+        text: "",
+        Linkedin: "https://in.linkedin.com/in/ishkaran-singh-bhandari-031433120",
+        Instagram: "https://www.instagram.com/ishkaransinghbhandari/?hl=en",
+    },
+    {
         name: "Revealing Soon",
         imgSrc: "/unknown.jpg",
         text: "Stay tuned for more updates! Follow our Instagram for more updates",
         Linkedin: "#",
         Instagram: "https://www.instagram.com/tedx.iitgandhinagar/",
     },
-    // {
-    //     name: "Vivamus Relementum",
-    //     imgSrc: "/trial2.jpg",
-    //     text: "Duis leo. Sed fringilla mauris sit amet nibh.",
-    //     Linkedin: "10:00 AM",
-    //     Instagram: "https://www.Instagram.com/in/pratham-sharda-0147a9260/",
-    // },
-    // {
-    //     name: "Vivamus Relementum",
-    //     imgSrc: "/trial.jpg",
-    //     text: "Duis leo. Sed fringilla mauris sit amet nibh.",
-    //     Linkedin: "10:00 AM",
-    //     Instagram: "https://www.Instagram.com/in/pratham-sharda-0147a9260/",
-    // },
-    // {
-    //     name: "Vivamus Relementum",
-    //     imgSrc: "/trial2.jpg",
-    //     text: "Duis leo. Sed fringilla mauris sit amet nibh.",
-    //     Linkedin: "10:00 AM",
-    //     Instagram: "https://www.Instagram.com/in/pratham-sharda-0147a9260/",
-    // },
+
 ];
