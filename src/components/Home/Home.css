@@ -3,7 +3,9 @@
     justify-content: center;
     margin: 3rem 2rem;
 }
-
+/* .release{
+    background-color: rgb(30, 30, 30);
+} */
 .theme{
     display: flex;
     justify-content: center;
@@ -32,7 +34,6 @@
 }
 
 .tubelight{
-    color: rgba(255, 255, 255, 0.301); 
     text-align: center;
     justify-content: center;  
 }

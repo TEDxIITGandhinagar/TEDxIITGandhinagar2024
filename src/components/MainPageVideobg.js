@@ -11,7 +11,7 @@ function MainPageVideobg() {
   return (
     <div className="container">
       <div className="video-container">
-        <video autoPlay muted controls id="myVideo" onEnded={handleVideoEnd}>
+        <video autoPlay muted id="myVideo" onEnded={handleVideoEnd}>
           <source src='draft4.mp4' type="video/mp4" />
           Your browser does not support the video tag.
         </video>

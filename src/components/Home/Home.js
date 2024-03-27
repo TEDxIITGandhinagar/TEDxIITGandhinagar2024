@@ -39,8 +39,8 @@ function Home() {
   return (
     <>
       <MainPageVideobg />
-
       <div className="release">
+      <div>
         <div className="suspense">
           <h1>Revealing The Theme of</h1>
         </div>
@@ -61,8 +61,9 @@ function Home() {
       </div>
       <div className="main-theme">
         <div className="theme">
-          <video className="theme-video" ref={videoRef} src="/TEDxIITGandhinagar_2024_Theme_Release.mp4" muted controls></video>
+          <video className="theme-video" ref={videoRef} src="/TEDxIITGandhinagar_2024_Theme_Release.mp4" muted></video>
         </div>
+      </div>
       </div>
 
       <div id="about-section">
