@@ -26,9 +26,16 @@ export const SpeakerData = [
     {
         name: "Ishkaran Singh Bhandari",
         imgSrc: "/ishkaran_cropped.png",
-        text: "",
+        text: "A Supreme Court lawyer who played a key role in high profile cases like Sushant Singh Rajput Case, Nirbhaya Case, Asaram Bapu Case. With over 6 lakh followers, his social media roars. From Supreme Court battles to insightful Political Commentary, mobilizing public opinion. He fights for transparency and good governance",
         Linkedin: "https://in.linkedin.com/in/ishkaran-singh-bhandari-031433120",
         Instagram: "https://www.instagram.com/ishkaransinghbhandari/?hl=en",
+    },
+    {
+        name: "Anil Chhikara",
+        imgSrc: "/anil.jpeg",
+        text: "A serial entreprenure, Kattappa of Startups. A mentor with a whooping $100M+ startup portfolio. Multi-talented personality, a trained sculptor from New York Academy of Fine Arts, an emerging OTT actor, Founder & CEO of Bluebolt Electric. He is also the Chairman of Startup India Foundation, Head of MCats, Judge for Haywards 5000 and the Vault Show.",
+        Linkedin: "https://in.linkedin.com/in/anilchhikara",
+        Instagram: "https://www.instagram.com/anil.chhikara/",
     },
     {
         name: "Revealing Soon",
@@ -37,5 +44,4 @@ export const SpeakerData = [
         Linkedin: "#",
         Instagram: "https://www.instagram.com/tedx.iitgandhinagar/",
     },
-
 ];
