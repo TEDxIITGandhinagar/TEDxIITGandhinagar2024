@@ -38,6 +38,13 @@ export const SpeakerData = [
         Instagram: "https://www.instagram.com/anil.chhikara/",
     },
     {
+        name: "Shreya Poonja",
+        imgSrc: "/shreya.jpeg",
+        text: "Recipient of Femina Miss India 2023 first runner up. An epitome of grace and intelligence. Her remarkable journey, marked by her commitment to excellence and her ability to shine amidst a constellation of talents, is a testament to her indomitable spirit. As a rising star in the beauty and fashion industry, she embodies the power of dreams and determination.",
+        Linkedin: "https://www.linkedin.com/company/tedxiitgandhinagar?trk=similar-pages",
+        Instagram: "https://www.instagram.com/shreya.poonja/?hl=en",
+    },
+    {
         name: "Revealing Soon",
         imgSrc: "/unknown.jpg",
         text: "Stay tuned for more updates! Follow our Instagram for more updates",
