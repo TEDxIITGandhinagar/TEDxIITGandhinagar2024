@@ -54,7 +54,7 @@ export const CoreData = [
       imgSrc: "/team/Saransh.jpg",
       designation: "Content for Talk Core",
       email: "saransh.sharma@iitgn.ac.in",
-      number: "+91 73409 64064",
+      number: "+91 9892703974",
       linkedin: "https://in.linkedin.com/in/saransh-sharma-619124260",
       insta: "https://www.instagram.com/saransh_2003/",
     },
@@ -63,7 +63,7 @@ export const CoreData = [
       imgSrc: "/team/Tilak.jpg",
       designation: "Events Production Core",
       email: "tilak.maheshwari@iitgn.ac.in",
-      number: "+91 99201 32149",
+      number: "+91 8962141441",
       linkedin: "https://in.linkedin.com/in/tilak-maheshwari-b14861261",
       insta: "https://www.instagram.com/tilakm_27/",
     },
@@ -72,7 +72,7 @@ export const CoreData = [
       imgSrc: "/team/dhruvi.jpg",
       designation: "Design Core",
       email: "dhruvi.sisodiya@iitgn.ac.in",
-      number: "+91 99201 32149",
+      number: "+91 9328921203",
       linkedin: "https://in.linkedin.com/in/dhruvi-sisodiya-1188ab251",
       insta: "#",
     },
@@ -81,10 +81,19 @@ export const CoreData = [
       imgSrc: "/team/darshan.jpg",
       designation: "Finance Core",
       email: "darshan.zhala@iitgn.ac.in",
-      number: "+91 99201 32149",
+      number: "+91 9328422062",
       linkedin: "https://in.linkedin.com/in/darshan-zala-7321a7203",
       insta: "https://www.instagram.com/darshanzala_/",
     },
+    {
+      name: "Parag Sahu",
+      imgSrc: "/team/parag.jpg",
+      designation: "Event Management Core",
+      email: "parag.sahu@iitgn.ac.in",
+      number: "+91 8462901727",
+      linkedin: "https://in.linkedin.com/in/darshan-zala-7321a7203",
+      insta: "https://www.instagram.com/darshanzala_/",
+    }
   ];
   
   export const TechTeamData = [

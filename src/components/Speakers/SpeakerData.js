@@ -45,10 +45,24 @@ export const SpeakerData = [
         Instagram: "https://www.instagram.com/shreya.poonja/?hl=en",
     },
     {
-        name: "Revealing Soon",
-        imgSrc: "/unknown.jpg",
-        text: "Stay tuned for more updates! Follow our Instagram for more updates",
-        Linkedin: "#",
+        name: "Revathi Ramanan",
+        imgSrc: "/revathi.webp",
+        text: "Revathi Ramanan is a distinguished Commonwealth Scholar and an alumna of the Teach For India fellowship. As the Senior Director of Regions at Teach For India, she plays a crucial role in shaping and leading educational strategies. Her commitment reflects in bridging the gap in educational equity and fostering social change..",
+        Linkedin: "https://in.linkedin.com/in/revathi-ramanan-84783511",
         Instagram: "https://www.instagram.com/tedx.iitgandhinagar/",
     },
+    {
+        name: "Amit Agarwal",
+        imgSrc: "/amit.jpg",
+        text: "Renowned author of the 'The Ultimate Sales Accelerator' and 'Small is Big'. Amit Agarwal is a renowned author and holds the position of Senior Vice President of Sales at Algonomy. His participation at the IT SALES CONFERENCE, 2023, in GIFT City, Gandhinagar, highlights his expertise and influence in the field.",
+        Linkedin: "https://in.linkedin.com/in/amit-agarwal-0103643",
+        Instagram: "https://www.instagram.com/tedx.iitgandhinagar/",
+    },
+    {
+        name: "Dr. Praveen Kumar Venula",
+        imgSrc: "/pkv.jpg",
+        text: "Dr. Praveen Kumar Vemula works at the Institute for Stem Cell Science and Regenerative Medicine (inStem), Bangalore, focusing on the fields of biomaterials, nanomaterials, drug delivery, medical devices, and chemical biology. He has published more than 65 peer-reviewed papers, delivered over 100 national and international invited lectures, and holds more than 20 issued or pending national/international patents. Technologies developed in Dr. Vemula's lab have led to the creation of multiple products currently on the market or under development, contributing to the launch of four companies. These include an anti-pesticide technologies company in India, a drug discovery company for inflammatory bowel diseases (IBDs) in the USA, a skincare company in France, and an inflammation targeting company in the USA.",
+        Linkedin: "https://in.linkedin.com/in/praveen-kumar-vemula-55717116",
+        Instagram: "https://www.instagram.com/tedx.iitgandhinagar/",
+    }
 ];
