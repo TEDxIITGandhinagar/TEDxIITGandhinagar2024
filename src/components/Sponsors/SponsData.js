@@ -2,12 +2,12 @@ export const TitleSponsData = [
     {
         id: 1,
         name: "GSBTM",
-        image: "spons/gsbtm.jpeg",
+        image: "spons/gsbtm.png",
     },
     {
         id: 2,
-        name: "DSI",
-        image: "spons/dsi.jpeg",
+        name: "DST",
+        image: "spons/dst.jpg",
     },
     
 ]
