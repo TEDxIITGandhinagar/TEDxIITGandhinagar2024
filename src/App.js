@@ -8,6 +8,7 @@ import Team from './components/Team/Team';
 import Tickets from './components/Tickets/Tickets'
 import Footer from './components/Footer';
 import Schedule from './components/Schedule/Schedule';
+import Sponsors from './components/Sponsors/Sponsors';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       <Route path="/speakers" element={<Speakers/>} />
       {/* <Route path="/talks" element={<Talks/>} /> */}
       <Route path="/team" element={<Team/>} />
-      <Route path="/schedule" element={<Schedule/>} />
+      <Route path="/schedule" element={<Schedule/>} />      
+      <Route path="/sponsors" element={<Sponsors/>} />
       <Route path="/tickets" element={<Tickets/>} />
       </Routes>
       <Footer/>
