@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Sponsors.css";
-import { TitleSponsData, PlatSponsData, GoldSponsData, DiamSponsData, FinSponsData,  CoSponsData, PartnerData } from "./SponsData";
+import { TitleSponsData, PlatSponsData, GoldSponsData, DiamSponsData,  CoSponsData, PartnerData } from "./SponsData";
 
 export default function Sponsors() {
   return (
@@ -27,12 +27,6 @@ export default function Sponsors() {
           <h1 className="orbitron">Gold Sponsors</h1>
           <div>
             {GoldSponsData.map((about, index) => {
-              return <Card key={index} about={about}/>;
-            })}
-          </div>
-          <h1 className="orbitron">Financial Partners</h1>
-          <div>
-            {FinSponsData.map((about, index) => {
               return <Card key={index} about={about}/>;
             })}
           </div>

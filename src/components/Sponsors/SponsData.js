@@ -33,15 +33,6 @@ export const GoldSponsData = [
         image: "spons/gil.jpeg",
     },
 ]
-
-export const FinSponsData = [
-    {
-        id: 5,
-        name: "ArgyleEnigma Tech labs",
-        image: "spons/argyle.jpeg",
-    },
-]
-
 export const CoSponsData = [
     {
         id: 7,
@@ -55,4 +46,9 @@ export const PartnerData = [
         name: "Geocarte Technology Pvt. Ltd.",
         image: "spons/geocarte.jpeg",
     },
+    {
+        id: 5,
+        name: "ArgyleEnigma Tech labs Financial Partner",
+        image: "spons/argyle.jpeg",
+    }
 ]
