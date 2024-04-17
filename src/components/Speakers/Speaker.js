@@ -9,7 +9,7 @@ function SpeakerItem({ index, item }) {
         <div className="ag-timeline_item">
             <div className="ag-timeline_body-item aos-init" data-aos="fade-left">
                 <div className="ag-timeline_img-box">
-                    <img src={item.imgSrc} className="ag-timeline_img common-image-speak" alt={index} />
+                    <img src={item.imgSrc} className="ag-timeline_img" alt={index} />
                 </div>
                 <div className="ag-timeline_info-item">
                     <div className="ag-timeline_descr-item">
