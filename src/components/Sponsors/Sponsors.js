@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Sponsors.css";
 import { TitleSponsData, PlatSponsData, GoldSponsData, DiamSponsData,  CoSponsData, PartnerData } from "./SponsData";
 
