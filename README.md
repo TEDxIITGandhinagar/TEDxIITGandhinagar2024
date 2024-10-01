@@ -1,0 +1,1 @@
+This repo is officially now tracked by CodeRabbit for any new PRs
